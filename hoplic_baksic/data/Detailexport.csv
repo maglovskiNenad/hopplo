@@ -1,0 +1,648 @@
+﻿Tag;Typ;PersNr;Nachname;Vorname;Betrieb;Arbeitsbereich;Startzeit;Endzeit;Dauer brutto;Dauer brutto (dezimal);Pause;Pause 1 Start;Pause 1 Ende;Pause 2 Start;Pause 2 Ende;Dauer;Ist;Ist inkl Ø;Soll;Saldo;Lohn;Mini LK 2 (Lohnsatz);Wert;Einheit;Werki LK 2 ALT (Lohnsatz);Wert;Einheit;TG 7/ 32h  (Lohnsatz);Wert;Einheit;Mini LK 1 (Lohnsatz);Wert;Einheit;Werki LK 1 (Lohnsatz);Wert;Einheit;TG 4/ 18h (Lohnsatz);Wert;Einheit;Werki LK 2  (Lohnsatz);Wert;Einheit;Festi TG4 / 20h  (Lohnsatz);Wert;Einheit;Durchschnittlicher Lohnsatz;Wert;Einheit;TG4 / 32h  (Lohnsatz);Wert;Einheit
+01.04.2025;Frei;349;Ari;Ahmet Kerim;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;40,022666666666666;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1200,68;Euro;-;-;-;-;-;-
+02.04.2025;Frei;349;Ari;Ahmet Kerim;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;40,022666666666666;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1200,68;Euro;-;-;-;-;-;-
+03.04.2025;Bestätigte Arbeitszeit;349;Ari;Ahmet Kerim;Hopplo Campus;Barista;15:00;19:00;04:00;4;0;;;;;04:00;4;4;6,67;-2,67;40,022666666666666;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1200,68;Euro;-;-;-;-;-;-
+04.04.2025;Frei;349;Ari;Ahmet Kerim;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;40,022666666666666;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1200,68;Euro;-;-;-;-;-;-
+05.04.2025;Bestätigte Arbeitszeit;349;Ari;Ahmet Kerim;Hopplo Campus;Barista;10:01;14:42;04:41;4,68;0;;;;;04:41;4,68;4,68;6,67;-1,98;40,022666666666666;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1200,68;Euro;-;-;-;-;-;-
+06.04.2025;Bestätigte Arbeitszeit;349;Ari;Ahmet Kerim;Hopplo Campus;Barista;10:00;16:00;06:00;6;0;;;;;06:00;6;6;6,67;-0,67;40,022666666666666;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1200,68;Euro;-;-;-;-;-;-
+01.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Bestätigte Arbeitszeit;347;Augustin;Michelle;Hopplo Campus;Barista;10:00;16:00;06:00;6;0;;;;;06:00;6;6;-;-;76,92;-;-;-;-;-;-;-;-;-;6;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Bestätigte Arbeitszeit;347;Augustin;Michelle;Hopplo Campus;Barista;14:03;19:09;05:06;5,1;0;;;;;05:06;5,1;5,1;-;-;65,38199999999999;-;-;-;-;-;-;-;-;-;5,1;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Bestätigte Arbeitszeit;347;Augustin;Michelle;Hopplo Campus;Barista;13:52;19:00;05:08;5,13;0;;;;;05:08;5,13;5,13;-;-;65,80933333333334;-;-;-;-;-;-;-;-;-;5,13;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Bestätigte Arbeitszeit;347;Augustin;Michelle;Hopplo Campus;Barista;14:14;19:20;05:06;5,1;0;;;;;05:06;5,1;5,1;-;-;65,38199999999999;-;-;-;-;-;-;-;-;-;5,1;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Bestätigte Arbeitszeit;347;Augustin;Michelle;Hopplo Campus;Barista;12:00;15:00;03:00;3;0;;;;;03:00;3;3;-;-;38,46;-;-;-;-;-;-;-;-;-;3;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Bestätigte Arbeitszeit;347;Augustin;Michelle;Hopplo Campus;Barista;11:00;17:00;06:00;6;0;;;;;06:00;6;6;-;-;76,92;-;-;-;-;-;-;-;-;-;6;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Bestätigte Arbeitszeit;347;Augustin;Michelle;Hopplo Campus;Barista;13:00;19:14;06:14;6,23;14;19:00;19:14;;;06:00;6;6;-;-;76,92;-;-;-;-;-;-;-;-;-;6;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Bestätigte Arbeitszeit;347;Augustin;Michelle;Hopplo Campus;Barista;13:49;19:00;05:11;5,18;0;;;;;05:11;5,18;5,18;-;-;66,45033333333333;-;-;-;-;-;-;-;-;-;5,18;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Nicht anwesend;347;Augustin;Michelle;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Bestätigte Arbeitszeit;264;Beltz;Fabian;Hopplo Campus;Barista;09:00;12:45;03:45;3,75;0;;;;;03:45;3,75;3,75;-;-;48,075;-;-;-;-;-;-;-;-;-;3,75;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Unbezahlte Abwesenheit für Stundenlöhner;264;Beltz;Fabian;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;-;-;-;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Bestätigte Arbeitszeit;264;Beltz;Fabian;Hopplo Campus;Barista;14:01;19:00;04:59;4,98;0;;;;;04:59;4,98;4,98;-;-;63,88633333333333;-;-;-;-;-;-;-;-;-;4,98;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Nicht anwesend;264;Beltz;Fabian;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Bestätigte Arbeitszeit;264;Beltz;Fabian;Hopplo Campus;Barista;14:50;20:09;05:19;5,32;0;;;;;05:19;5,32;5,32;-;-;68,15966666666667;-;-;-;-;-;-;-;-;-;5,32;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Urlaub (bezahlt);341;Birkholz;Anton;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;4,76;-;-;61,069818181818185;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;61,069818181818185;Euro;-;-;-
+05.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Bestätigte Arbeitszeit;341;Birkholz;Anton;Hopplo Campus;Barista;14:00;20:09;06:09;6,15;9;20:00;20:09;;;06:00;6;6;-;-;76,92;-;-;-;-;-;-;-;-;-;6;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Bestätigte Arbeitszeit;341;Birkholz;Anton;Hopplo Campus;Barista;15:00;19:38;04:38;4,63;0;;;;;04:38;4,63;4,63;-;-;59,39933333333334;-;-;-;-;-;-;-;-;-;4,63;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Bestätigte Arbeitszeit;341;Birkholz;Anton;Hopplo Campus;Barista;15:00;19:14;04:14;4,23;0;;;;;04:14;4,23;4,23;-;-;54,27133333333334;-;-;-;-;-;-;-;-;-;4,23;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Bestätigte Arbeitszeit;341;Birkholz;Anton;Hopplo Campus;Barista;08:30;14:39;06:09;6,15;9;14:30;14:39;;;06:00;6;6;-;-;76,92;-;-;-;-;-;-;-;-;-;6;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Nicht anwesend;341;Birkholz;Anton;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Bestätigte Arbeitszeit;299;Bussey;John Henry;Hopplo Campus;Barista;12:05;19:01;06:56;6,93;30;18:05;18:35;;;06:26;6,43;6,43;6;0,43;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Bestätigte Arbeitszeit;299;Bussey;John Henry;Hopplo Campus;Barista;10:00;16:03;06:03;6,05;3;16:00;16:03;;;06:00;6;6;6;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Bestätigte Arbeitszeit;299;Bussey;John Henry;Hopplo Campus;Barista;13:06;18:58;05:52;5,87;0;;;;;05:52;5,87;5,87;6;-0,13;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Bestätigte Arbeitszeit;299;Bussey;John Henry;Hopplo Campus;Barista;13:00;18:59;05:59;5,98;0;;;;;05:59;5,98;5,98;6;-0,02;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Bestätigte Arbeitszeit;299;Bussey;John Henry;Hopplo Campus;Barista;12:00;17:00;05:00;5;0;;;;;05:00;5;5;0;5;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Bestätigte Arbeitszeit;299;Bussey;John Henry;Hopplo Campus;Barista;13:00;19:07;06:07;6,12;0;;;;;06:07;6,12;6,12;6;0,12;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Bestätigte Arbeitszeit;299;Bussey;John Henry;Hopplo Campus;Barista;13:01;19:00;05:59;5,98;0;;;;;05:59;5,98;5,98;6;-0,02;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Frei(Karfreitag);299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Frei(Ostermontag);299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Bestätigte Arbeitszeit;299;Bussey;John Henry;Hopplo Campus;Barista;13:00;19:00;06:00;6;0;;;;;06:00;6;6;6;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Bestätigte Arbeitszeit;299;Bussey;John Henry;Hopplo Campus;Barista;13:00;18:59;05:59;5,98;0;;;;;05:59;5,98;5,98;6;-0,02;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Bestätigte Arbeitszeit;299;Bussey;John Henry;Hopplo Campus;Barista;10:00;16:00;06:00;6;0;;;;;06:00;6;6;0;6;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Bestätigte Arbeitszeit;299;Bussey;John Henry;Hopplo Campus;Barista;13:00;19:09;06:09;6,15;9;19:00;19:09;;;06:00;6;6;6;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Fehlzeit;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;6;-6;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Frei;299;Bussey;John Henry;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;36,02033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333334;1080,61;Euro;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Bestätigte Arbeitszeit;288;Bürckner;Mary-Lee;Hopplo Campus;Barista;12:53;19:00;06:07;6,12;7;18:53;19:00;;;06:00;6;6;-;-;88,44;-;-;-;-;-;-;-;-;-;-;-;-;6;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Bestätigte Arbeitszeit;288;Bürckner;Mary-Lee;Hopplo Campus;Barista;08:30;14:32;06:02;6,03;2;14:30;14:32;;;06:00;6;6;-;-;88,44;-;-;-;-;-;-;-;-;-;-;-;-;6;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Bestätigte Arbeitszeit;288;Bürckner;Mary-Lee;Hopplo Campus;Barista;08:00;16:47;08:47;8,78;30;14:00;14:30;;;08:17;8,28;8,28;-;-;122,09633333333333;-;-;-;-;-;-;-;-;-;-;-;-;8,28;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Bestätigte Arbeitszeit;288;Bürckner;Mary-Lee;Hopplo Campus;Barista;08:00;16:30;08:30;8,5;30;14:00;14:30;;;08:00;8;8;-;-;117,92;-;-;-;-;-;-;-;-;-;-;-;-;8;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Bestätigte Arbeitszeit;288;Bürckner;Mary-Lee;Hopplo Campus;Barista;12:00;16:00;04:00;4;0;;;;;04:00;4;4;-;-;58,96;-;-;-;-;-;-;-;-;-;-;-;-;4;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Bestätigte Arbeitszeit;288;Bürckner;Mary-Lee;Hopplo Campus;Barista;08:15;16:31;08:16;8,27;30;14:15;14:45;;;07:46;7,77;7,77;-;-;114,48066666666666;-;-;-;-;-;-;-;-;-;-;-;-;7,77;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Bestätigte Arbeitszeit;288;Bürckner;Mary-Lee;Hopplo Campus;Barista;13:00;19:18;06:18;6,3;18;19:00;19:18;;;06:00;6;6;-;-;88,44;-;-;-;-;-;-;-;-;-;-;-;-;6;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Nicht anwesend;275;Dahlmeier;Arne;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Bestätigte Arbeitszeit;344;Diebel;Amelie;Hopplo Campus;Barista;08:09;16:41;08:32;8,53;30;14:09;14:39;;;08:02;8,03;8,03;-;-;102,98733333333334;-;-;-;-;-;-;-;-;-;8,03;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Bestätigte Arbeitszeit;344;Diebel;Amelie;Hopplo Campus;Barista;13:00;17:05;04:05;4,08;0;;;;;04:05;4,08;4,08;-;-;52,34833333333333;-;-;-;-;-;-;-;-;-;4,08;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Nicht anwesend;344;Diebel;Amelie;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Nicht anwesend;344;Diebel;Amelie;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Bestätigte Arbeitszeit;344;Diebel;Amelie;Hopplo Campus;Barista;13:58;19:16;05:18;5,3;0;;;;;05:18;5,3;5,3;-;-;67,946;-;-;-;-;-;-;-;-;-;5,3;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Bestätigte Arbeitszeit;344;Diebel;Amelie;Hopplo Campus;Barista;15:00;19:00;04:00;4;0;;;;;04:00;4;4;-;-;51,28;-;-;-;-;-;-;-;-;-;4;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Bestätigte Arbeitszeit;344;Diebel;Amelie;Hopplo Campus;Barista;12:00;17:14;05:14;5,23;0;;;;;05:14;5,23;5,23;-;-;67,09133333333334;-;-;-;-;-;-;-;-;-;5,23;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Nicht anwesend;344;Diebel;Amelie;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Bestätigte Arbeitszeit;344;Diebel;Amelie;Hopplo Campus;Barista;08:30;14:36;06:06;6,1;6;14:30;14:36;;;06:00;6;6;-;-;76,92;-;-;-;-;-;-;-;-;-;6;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Bestätigte Arbeitszeit;344;Diebel;Amelie;Hopplo Campus;Barista;14:02;19:25;05:23;5,38;0;;;;;05:23;5,38;5,38;-;-;69,01433333333334;-;-;-;-;-;-;-;-;-;5,38;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Nicht anwesend;344;Diebel;Amelie;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;344;Diebel;Amelie;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Nicht anwesend;344;Diebel;Amelie;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Nicht anwesend;344;Diebel;Amelie;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Nicht anwesend;344;Diebel;Amelie;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Nicht anwesend;344;Diebel;Amelie;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;344;Diebel;Amelie;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);344;Diebel;Amelie;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;344;Diebel;Amelie;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;344;Diebel;Amelie;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);344;Diebel;Amelie;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Bestätigte Arbeitszeit;344;Diebel;Amelie;Hopplo Campus;Barista;14:00;18:59;04:59;4,98;0;;;;;04:59;4,98;4,98;-;-;63,88633333333333;-;-;-;-;-;-;-;-;-;4,98;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Unbezahlte Abwesenheit für Stundenlöhner;344;Diebel;Amelie;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;-;-;-;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Unbezahlte Abwesenheit für Stundenlöhner;344;Diebel;Amelie;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;-;-;-;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Unbezahlte Abwesenheit für Stundenlöhner;344;Diebel;Amelie;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;-;-;-;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Unbezahlte Abwesenheit für Stundenlöhner;344;Diebel;Amelie;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;-;-;-;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Unbezahlte Abwesenheit für Stundenlöhner;344;Diebel;Amelie;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;-;-;-;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Unbezahlte Abwesenheit für Stundenlöhner;344;Diebel;Amelie;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;-;-;-;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Unbezahlte Abwesenheit für Stundenlöhner;344;Diebel;Amelie;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;-;-;-;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Unbezahlte Abwesenheit für Stundenlöhner;344;Diebel;Amelie;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;-;-;-;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Bestätigte Arbeitszeit;294;Döringer;Freya;Hopplo Campus;Barista;10:01;15:13;05:12;5,2;0;;;;;05:12;5,2;5,2;-;-;66,664;-;-;-;-;-;-;-;-;-;5,2;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Nicht anwesend;294;Döringer;Freya;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Bestätigte Arbeitszeit;276;Hildebrandt;Moritz;Hopplo Campus;Barista;13:55;19:01;05:06;5,1;0;;;;;05:06;5,1;5,1;-;-;79,55999999999999;-;-;-;5,1;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Urlaub (bezahlt);276;Hildebrandt;Moritz;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;5,75;-;-;89,63499999999999;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;89,63499999999999;Euro;-;-;-
+08.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Bestätigte Arbeitszeit;276;Hildebrandt;Moritz;Hopplo Campus;Barista;10:00;16:03;06:03;6,05;3;16:00;16:03;;;06:00;6;6;-;-;93,6;-;-;-;6;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Bestätigte Arbeitszeit;276;Hildebrandt;Moritz;Hopplo Campus;Barista;10:02;16:05;06:03;6,05;3;16:02;16:05;;;06:00;6;6;-;-;93,6;-;-;-;6;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Bestätigte Arbeitszeit;276;Hildebrandt;Moritz;Hopplo Campus;Barista;08:32;14:35;06:03;6,05;0;;;;;06:03;6,05;6,05;-;-;94,38;-;-;-;6,05;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Krankheit (bezahlt);276;Hildebrandt;Moritz;Hopplo Campus;Barista;08:45;14:30;00:00;0;-;;;;;00:00;0;5,76;-;-;89,86095238095238;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;89,86095238095238;Euro;-;-;-
+26.04.2025;Krankheit (bezahlt);276;Hildebrandt;Moritz;Hopplo Campus;Barista;10:00;16:00;00:00;0;-;;;;;00:00;0;5,76;-;-;89,86095238095238;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;89,86095238095238;Euro;-;-;-
+27.04.2025;Krankheit (bezahlt);276;Hildebrandt;Moritz;Hopplo Campus;Barista;10:00;16:00;00:00;0;-;;;;;00:00;0;5,76;-;-;89,86095238095238;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;89,86095238095238;Euro;-;-;-
+28.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Nicht anwesend;276;Hildebrandt;Moritz;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Krankheit (bezahlt);276;Hildebrandt;Moritz;Hopplo Campus;Barista;08:30;15:00;00:00;0;-;;;;;00:00;0;5,76;-;-;89,86095238095238;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;89,86095238095238;Euro;-;-;-
+01.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;14:11;19:00;04:49;4,82;0;;;;;04:49;4,82;4,82;-;-;74,08033333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;4,82;15,38;Euro;-;-;-;-;-;-;-;-;-
+02.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;07:51;16:29;08:38;8,63;30;13:51;14:21;;;08:08;8,13;8,13;-;-;125,09066666666666;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;8,13;15,38;Euro;-;-;-;-;-;-;-;-;-
+03.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;11:30;19:00;07:30;7,5;30;17:30;18:00;;;07:00;7;7;-;-;107,66000000000001;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;7;15,38;Euro;-;-;-;-;-;-;-;-;-
+04.04.2025;Nicht anwesend;328;Kara;Caner;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0;15,38;Euro;-;-;-;-;-;-;-;-;-
+05.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;08:00;18:45;10:45;10,75;45;14:00;14:30;17:30;17:45;10:00;10;10;-;-;153,8;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;10;15,38;Euro;-;-;-;-;-;-;-;-;-
+06.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;08:00;18:45;10:45;10,75;45;14:00;14:30;17:30;17:45;10:00;10;10;-;-;153,8;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;10;15,38;Euro;-;-;-;-;-;-;-;-;-
+07.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;08:11;16:38;08:27;8,45;30;14:11;14:41;;;07:57;7,95;7,95;-;-;122,27100000000002;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;7,95;15,38;Euro;-;-;-;-;-;-;-;-;-
+08.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;07:52;16:30;08:38;8,63;30;13:52;14:22;;;08:08;8,13;8,13;-;-;125,09066666666666;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;8,13;15,38;Euro;-;-;-;-;-;-;-;-;-
+09.04.2025;Nicht anwesend;328;Kara;Caner;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0;15,38;Euro;-;-;-;-;-;-;-;-;-
+10.04.2025;Nicht anwesend;328;Kara;Caner;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0;15,38;Euro;-;-;-;-;-;-;-;-;-
+11.04.2025;Nicht anwesend;328;Kara;Caner;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0;15,38;Euro;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;328;Kara;Caner;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0;15,38;Euro;-;-;-;-;-;-;-;-;-
+13.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;09:33;15:30;05:57;5,95;0;;;;;05:57;5,95;5,95;-;-;91,51100000000001;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;5,95;15,38;Euro;-;-;-;-;-;-;-;-;-
+14.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;08:02;16:30;08:28;8,47;30;14:02;14:32;;;07:58;7,97;7,97;-;-;122,52733333333335;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;7,97;15,38;Euro;-;-;-;-;-;-;-;-;-
+15.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;08:00;11:42;03:42;3,7;0;;;;;03:42;3,7;3,7;-;-;56,906000000000006;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;3,7;15,38;Euro;-;-;-;-;-;-;-;-;-
+16.04.2025;Nicht anwesend;328;Kara;Caner;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0;15,38;Euro;-;-;-;-;-;-;-;-;-
+17.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;07:47;16:32;08:45;8,75;30;13:47;14:17;;;08:15;8,25;8,25;-;-;126,885;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;8,25;15,38;Euro;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);328;Kara;Caner;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0;15,38;Euro;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;328;Kara;Caner;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0;15,38;Euro;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;328;Kara;Caner;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0;15,38;Euro;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);328;Kara;Caner;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0;15,38;Euro;-;-;-;-;-;-;-;-;-
+22.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;07:41;16:33;08:52;8,87;30;13:41;14:11;;;08:22;8,37;8,37;-;-;128,67933333333335;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;8,37;15,38;Euro;-;-;-;-;-;-;-;-;-
+23.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;12:59;19:00;06:01;6,02;1;18:59;19:00;;;06:00;6;6;-;-;92,28;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;6;15,38;Euro;-;-;-;-;-;-;-;-;-
+24.04.2025;Nicht anwesend;328;Kara;Caner;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0;15,38;Euro;-;-;-;-;-;-;-;-;-
+25.04.2025;Nicht anwesend;328;Kara;Caner;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0;15,38;Euro;-;-;-;-;-;-;-;-;-
+26.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;13:35;19:06;05:31;5,52;0;;;;;05:31;5,52;5,52;-;-;84,84633333333333;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;5,52;15,38;Euro;-;-;-;-;-;-;-;-;-
+27.04.2025;Nicht anwesend;328;Kara;Caner;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0;15,38;Euro;-;-;-;-;-;-;-;-;-
+28.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;11:47;17:07;05:20;5,33;0;;;;;05:20;5,33;5,33;-;-;82,02666666666667;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;5,33;15,38;Euro;-;-;-;-;-;-;-;-;-
+29.04.2025;Bestätigte Arbeitszeit;328;Kara;Caner;Hopplo Campus;Barista;10:40;17:12;06:32;6,53;30;16:40;17:10;;;06:02;6,03;6,03;-;-;92,79266666666668;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;6,03;15,38;Euro;-;-;-;-;-;-;-;-;-
+30.04.2025;Nicht anwesend;328;Kara;Caner;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0;15,38;Euro;-;-;-;-;-;-;-;-;-
+01.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Bestätigte Arbeitszeit;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;18:17;20:10;01:53;1,88;0;;;;;01:53;1,88;1,88;-;-;27,76033333333333;-;-;-;-;-;-;-;-;-;-;-;-;1,88;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Bestätigte Arbeitszeit;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;12:56;18:11;05:15;5,25;0;;;;;05:15;5,25;5,25;-;-;77,385;-;-;-;-;-;-;-;-;-;-;-;-;5,25;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Bestätigte Arbeitszeit;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;13:01;18:46;05:45;5,75;0;;;;;05:45;5,75;5,75;-;-;84,755;-;-;-;-;-;-;-;-;-;-;-;-;5,75;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Bestätigte Arbeitszeit;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;14:00;19:01;05:01;5,02;0;;;;;05:01;5,02;5,02;-;-;73,94566666666667;-;-;-;-;-;-;-;-;-;-;-;-;5,02;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Bestätigte Arbeitszeit;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;11:27;17:18;05:51;5,85;0;;;;;05:51;5,85;5,85;-;-;86,229;-;-;-;-;-;-;-;-;-;-;-;-;5,85;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Bestätigte Arbeitszeit;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;10:04;16:04;06:00;6;0;;;;;06:00;6;6;-;-;88,44;-;-;-;-;-;-;-;-;-;-;-;-;6;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Nicht anwesend;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Bestätigte Arbeitszeit;343;Kieu Thanh Huyen;Hoang;Hopplo Campus;Barista;13:56;20:09;06:13;6,22;13;19:56;20:09;;;06:00;6;6;-;-;88,44;-;-;-;-;-;-;-;-;-;-;-;-;6;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;12:00;17:00;05:00;5;0;;;;;05:00;5;5;-;-;73,7;-;-;-;-;-;-;-;-;-;-;-;-;5;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Nicht anwesend;346;Lozano Berz;Ariana;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;11:56;17:09;05:13;5,22;0;;;;;05:13;5,22;5,22;-;-;76,89366666666668;-;-;-;-;-;-;-;-;-;-;-;-;5,22;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;14:03;17:05;03:02;3,03;0;;;;;03:02;3,03;3,03;-;-;44,71133333333333;-;-;-;-;-;-;-;-;-;-;-;-;3,03;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Urlaub (bezahlt);346;Lozano Berz;Ariana;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;5,88;-;-;86,72033333333334;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;86,72033333333334;Euro;-;-;-
+06.04.2025;Urlaub (bezahlt);346;Lozano Berz;Ariana;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;5,88;-;-;86,72033333333334;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;86,72033333333334;Euro;-;-;-
+07.04.2025;Nicht anwesend;346;Lozano Berz;Ariana;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;13:00;19:00;06:00;6;0;;;;;06:00;6;6;-;-;88,44;-;-;-;-;-;-;-;-;-;-;-;-;6;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;14:00;19:00;05:00;5;0;;;;;05:00;5;5;-;-;73,7;-;-;-;-;-;-;-;-;-;-;-;-;5;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;08:00;15:30;07:30;7,5;30;14:00;14:30;;;07:00;7;7;-;-;103,18;-;-;-;-;-;-;-;-;-;-;-;-;7;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;18:17;20:10;01:53;1,88;0;;;;;01:53;1,88;1,88;-;-;27,76033333333333;-;-;-;-;-;-;-;-;-;-;-;-;1,88;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;346;Lozano Berz;Ariana;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Nicht anwesend;346;Lozano Berz;Ariana;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;08:26;14:35;06:09;6,15;9;14:26;14:35;;;06:00;6;6;-;-;88,44;-;-;-;-;-;-;-;-;-;-;-;-;6;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;08:30;14:45;06:15;6,25;0;;;;;06:15;6,25;6,25;-;-;92,125;-;-;-;-;-;-;-;-;-;-;-;-;6,25;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;08:46;16:34;07:48;7,8;30;14:46;15:16;;;07:18;7,3;7,3;-;-;107,602;-;-;-;-;-;-;-;-;-;-;-;-;7,3;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;346;Lozano Berz;Ariana;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);346;Lozano Berz;Ariana;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;346;Lozano Berz;Ariana;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;346;Lozano Berz;Ariana;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);346;Lozano Berz;Ariana;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;10:56;18:26;07:30;7,5;30;16:56;17:26;;;07:00;7;7;-;-;103,18;-;-;-;-;-;-;-;-;-;-;-;-;7;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Nicht anwesend;346;Lozano Berz;Ariana;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;08:23;14:36;06:13;6,22;13;14:23;14:36;;;06:00;6;6;-;-;88,44;-;-;-;-;-;-;-;-;-;-;-;-;6;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Nicht anwesend;346;Lozano Berz;Ariana;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;13:00;20:30;07:30;7,5;30;19:00;19:30;;;07:00;7;7;-;-;103,18;-;-;-;-;-;-;-;-;-;-;-;-;7;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Nicht anwesend;346;Lozano Berz;Ariana;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Nicht anwesend;346;Lozano Berz;Ariana;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;-;-;-;0;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;14:00;19:18;05:18;5,3;0;;;;;05:18;5,3;5,3;-;-;78,122;-;-;-;-;-;-;-;-;-;-;-;-;5,3;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Bestätigte Arbeitszeit;346;Lozano Berz;Ariana;Hopplo Campus;Barista;10:00;13:30;03:30;3,5;0;;;;;03:30;3,5;3,5;-;-;51,59;-;-;-;-;-;-;-;-;-;-;-;-;3,5;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Barista;08:30;14:30;06:00;6;0;;;;;06:00;6;6;6,4;-0,4;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Standortleitung;08:47;19:41;10:54;10,9;45;14:47;15:17;18:17;18:32;10:09;10,15;10,15;6,4;4,82;71,49333333333334;-;-;-;-;-;-;0,027777777777777776;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Standortleitung;21:08;22:12;01:04;1,07;0;;;;;01:04;1,07;1,07;6,4;4,82;14,298666666666666;-;-;-;-;-;-;0,005555555555555555;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Barista;08:30;14:30;06:00;6;0;;;;;06:00;6;6;6,4;1,08;65,90791666666667;-;-;-;-;-;-;0,025607638888888885;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Standortleitung;20:49;22:18;01:29;1,48;0;;;;;01:29;1,48;1,48;6,4;1,08;19,884083333333333;-;-;-;-;-;-;0,007725694444444444;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Barista;08:24;14:12;05:48;5,8;0;;;;;05:48;5,8;5,8;6,4;-0,6;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Frei;262;Maglovski;Nenad;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Frei;262;Maglovski;Nenad;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Standortleitung;12:50;15:16;02:26;2,43;0;;;;;02:26;2,43;2,43;6,4;-3,97;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Barista;08:29;14:41;06:12;6,2;12;14:29;14:41;;;06:00;6;6;6,4;1,33;62,55666666666667;-;-;-;-;-;-;0,024305555555555556;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Standortleitung;16:21;18:05;01:44;1,73;0;;;;;01:44;1,73;1,73;6,4;1,33;23,235333333333333;-;-;-;-;-;-;0,009027777777777777;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Standortleitung;08:34;14:43;06:09;6,15;9;14:34;14:43;;;06:00;6;6;6,4;0,42;74,84458333333333;-;-;-;-;-;-;0,02907986111111111;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Standortleitung;16:06;16:55;00:49;0,82;0;;;;;00:49;0,82;0,82;6,4;0,42;10,947416666666665;-;-;-;-;-;-;0,004253472222222221;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Barista;08:11;14:35;06:24;6,4;24;14:11;14:35;;;06:00;6;6;6,4;0,93;67,91866666666667;-;-;-;-;-;-;0,026388888888888885;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Standortleitung;17:40;19:00;01:20;1,33;0;;;;;01:20;1,33;1,33;6,4;0,93;17,873333333333335;-;-;-;-;-;-;0,006944444444444444;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Barista;08:20;14:43;06:23;6,38;23;14:20;14:43;;;06:00;6;6;6,4;-0,4;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Frei;262;Maglovski;Nenad;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Frei;262;Maglovski;Nenad;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Urlaub (bezahlt);262;Maglovski;Nenad;Hopplo Campus;Barista;00:00;00:00;06:24;6,4;-;;;;;06:24;6,4;6,4;6,4;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Urlaub (bezahlt);262;Maglovski;Nenad;Hopplo Campus;Barista;00:00;00:00;06:24;6,4;-;;;;;06:24;6,4;6,4;6,4;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Urlaub (bezahlt);262;Maglovski;Nenad;Hopplo Campus;Barista;00:00;00:00;06:24;6,4;-;;;;;06:24;6,4;6,4;6,4;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Urlaub (bezahlt);262;Maglovski;Nenad;Hopplo Campus;Barista;00:00;00:00;06:24;6,4;-;;;;;06:24;6,4;6,4;6,4;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Urlaub (Karfreitag);262;Maglovski;Nenad;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Urlaub;262;Maglovski;Nenad;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Urlaub;262;Maglovski;Nenad;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Urlaub (Ostermontag);262;Maglovski;Nenad;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Urlaub (bezahlt);262;Maglovski;Nenad;Hopplo Campus;Barista;00:00;00:00;06:24;6,4;-;;;;;06:24;6,4;6,4;6,4;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Urlaub (bezahlt);262;Maglovski;Nenad;Hopplo Campus;Barista;00:00;00:00;06:24;6,4;-;;;;;06:24;6,4;6,4;6,4;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Urlaub (bezahlt);262;Maglovski;Nenad;Hopplo Campus;Barista;00:00;00:00;06:24;6,4;-;;;;;06:24;6,4;6,4;6,4;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Urlaub (bezahlt);262;Maglovski;Nenad;Hopplo Campus;Barista;00:00;00:00;06:24;6,4;-;;;;;06:24;6,4;6,4;6,4;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Urlaub;262;Maglovski;Nenad;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Urlaub;262;Maglovski;Nenad;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Standortleitung;09:13;13:06;03:53;3,88;0;;;;;03:53;3,88;3,88;6,4;-0,88;63,89716666666667;-;-;-;-;-;-;0,024826388888888887;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Standortleitung;20:35;22:13;01:38;1,63;0;;;;;01:38;1,63;1,63;6,4;-0,88;21,89483333333333;-;-;-;-;-;-;0,008506944444444442;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Barista;09:02;14:33;05:31;5,52;0;;;;;05:31;5,52;5,52;6,4;-0,88;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Standortleitung;08:59;12:15;03:16;3,27;0;;;;;03:16;3,27;3,27;6,4;-0,78;54,29025;-;-;-;-;-;-;0,021093749999999998;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Bestätigte Arbeitszeit;262;Maglovski;Nenad;Hopplo Campus;Barista;12:15;14:36;02:21;2,35;0;;;;;02:21;2,35;2,35;6,4;-0,78;31,50175;-;-;-;-;-;-;0,012239583333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Frei;253;Maksso;Thomas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Frei;253;Maksso;Thomas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Bestätigte Arbeitszeit;253;Maksso;Thomas;Hopplo Campus;Barista;10:00;16:00;06:00;6;0;;;;;06:00;6;6;0;9;57,19466666666668;-;-;-;-;-;-;0,022222222222222223;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Bestätigte Arbeitszeit;253;Maksso;Thomas;Hopplo Campus;Standortleitung;16:00;19:00;03:00;3;0;;;;;03:00;3;3;0;9;28,59733333333333;-;-;-;-;-;-;0,01111111111111111;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Bestätigte Arbeitszeit;253;Maksso;Thomas;Hopplo Campus;Standortleitung;08:30;14:30;06:00;6;0;;;;;06:00;6;6;0;6;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Frei;253;Maksso;Thomas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Krankheit (bezahlt);253;Maksso;Thomas;Hopplo Campus;Barista;00:00;00:00;08:00;8;-;;;;;08:00;8;8;8;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Krankheit (bezahlt);253;Maksso;Thomas;Hopplo Campus;Barista;00:00;00:00;08:00;8;-;;;;;08:00;8;8;8;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Krankheit (bezahlt);253;Maksso;Thomas;Hopplo Campus;Barista;00:00;00:00;08:00;8;-;;;;;08:00;8;8;8;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Krankheit (bezahlt);253;Maksso;Thomas;Hopplo Campus;Barista;00:00;00:00;08:00;8;-;;;;;08:00;8;8;8;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Krankheit ohne Attest,;253;Maksso;Thomas;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;0;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Krankheit (bezahlt);253;Maksso;Thomas;Hopplo Campus;Barista;00:00;00:00;08:00;8;-;;;;;08:00;8;8;8;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Krankheit (bezahlt);253;Maksso;Thomas;Hopplo Campus;Barista;00:00;00:00;08:00;8;-;;;;;08:00;8;8;8;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Frei(Karfreitag);253;Maksso;Thomas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Frei;253;Maksso;Thomas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Frei;253;Maksso;Thomas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Frei(Ostermontag);253;Maksso;Thomas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Bestätigte Arbeitszeit;253;Maksso;Thomas;Hopplo Campus;Barista;08:30;14:30;06:00;6;0;;;;;06:00;6;6;8;-1;75,068;-;-;-;-;-;-;0,029166666666666664;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Bestätigte Arbeitszeit;253;Maksso;Thomas;Hopplo Campus;Barista;14:30;15:30;01:00;1;0;;;;;01:00;1;1;8;-1;10,724;-;-;-;-;-;-;0,004166666666666667;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Bestätigte Arbeitszeit;253;Maksso;Thomas;Hopplo Campus;Standortleitung;08:30;14:30;06:00;6;0;;;;;06:00;6;6;8;-2;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Bestätigte Arbeitszeit;253;Maksso;Thomas;Hopplo Campus;Barista;08:30;10:45;02:15;2,25;0;;;;;02:15;2,25;2,25;0;2,25;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Frei;253;Maksso;Thomas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Frei;253;Maksso;Thomas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Fehlzeit;253;Maksso;Thomas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;8;-8;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Bestätigte Arbeitszeit;253;Maksso;Thomas;Hopplo Campus;Standortleitung;06:58;14:56;07:58;7,97;122;12:10;14:12;;;05:56;5,93;5,93;8;-2,07;85,792;-;-;-;-;-;-;0,03333333333333333;2573,76;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Nicht anwesend;315;Möller;Christoph;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Frei(Ostermontag);348;Nazaruk;Yelyzaveta (Liza);Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;64,036;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1921,08;Euro
+22.04.2025;Bestätigte Arbeitszeit;348;Nazaruk;Yelyzaveta (Liza);Hopplo Campus;Barista;07:52;16:31;08:39;8,65;30;13:52;14:22;;;08:09;8,15;8,15;8;0,15;64,036;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1921,08;Euro
+23.04.2025;Bestätigte Arbeitszeit;348;Nazaruk;Yelyzaveta (Liza);Hopplo Campus;Barista;08:15;16:36;08:21;8,35;30;14:15;14:45;;;07:51;7,85;7,85;8;-0,15;64,036;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1921,08;Euro
+24.04.2025;Bestätigte Arbeitszeit;348;Nazaruk;Yelyzaveta (Liza);Hopplo Campus;Barista;08:00;16:30;08:30;8,5;0;;;;;08:30;8,5;8,5;8;0,5;64,036;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1921,08;Euro
+25.04.2025;Frei;348;Nazaruk;Yelyzaveta (Liza);Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;64,036;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1921,08;Euro
+26.04.2025;Frei;348;Nazaruk;Yelyzaveta (Liza);Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;0;0;64,036;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1921,08;Euro
+27.04.2025;Bestätigte Arbeitszeit;348;Nazaruk;Yelyzaveta (Liza);Hopplo Campus;Barista;10:00;16:20;06:20;6,33;20;16:00;16:20;;;06:00;6;6;0;6;64,036;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1921,08;Euro
+28.04.2025;Bestätigte Arbeitszeit;348;Nazaruk;Yelyzaveta (Liza);Hopplo Campus;Barista;07:30;16:29;08:59;8,98;0;;;;;08:59;8,98;8,98;8;0,98;64,036;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1921,08;Euro
+29.04.2025;Bestätigte Arbeitszeit;348;Nazaruk;Yelyzaveta (Liza);Hopplo Campus;Barista;07:39;16:37;08:58;8,97;30;13:39;14:09;;;08:28;8,47;8,47;8;0,47;64,036;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1921,08;Euro
+30.04.2025;Bestätigte Arbeitszeit;348;Nazaruk;Yelyzaveta (Liza);Hopplo Campus;Barista;07:38;16:31;08:53;8,88;30;13:38;14:08;;;08:23;8,38;8,38;8;0,38;64,036;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;0,03333333333333333;1921,08;Euro
+01.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Bestätigte Arbeitszeit;300;Opanasenko;Olha;Hopplo Campus;Barista;10:00;14:45;04:45;4,75;0;;;;;04:45;4,75;4,75;-;-;66,975;4,75;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Bestätigte Arbeitszeit;300;Opanasenko;Olha;Hopplo Campus;Barista;08:00;16:28;08:28;8,47;30;14:00;14:30;;;07:58;7,97;7,97;-;-;112,33;7,97;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Bestätigte Arbeitszeit;300;Opanasenko;Olha;Hopplo Campus;interne Aushilfen;18:00;20:30;02:30;2,5;0;;;;;02:30;2,5;2,5;-;-;35,25;2,5;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Bestätigte Arbeitszeit;300;Opanasenko;Olha;Hopplo Campus;interne Aushilfen;13:00;17:00;04:00;4;0;;;;;04:00;4;4;-;-;56,4;4;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Bestätigte Arbeitszeit;300;Opanasenko;Olha;Hopplo Campus;Barista;08:30;14:30;06:00;6;0;;;;;06:00;6;6;-;-;84,6;6;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Bestätigte Arbeitszeit;300;Opanasenko;Olha;Hopplo Campus;Barista;08:03;15:12;07:09;7,15;30;14:03;14:33;;;06:39;6,65;6,65;-;-;93,765;6,65;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Bestätigte Arbeitszeit;300;Opanasenko;Olha;Hopplo Campus;Barista;11:00;18:40;07:40;7,67;20;17:00;17:20;;;07:20;7,33;7,33;-;-;103,39999999999999;7,33;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Nicht anwesend;300;Opanasenko;Olha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Urlaub (bezahlt);255;Reitz;Jonas;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;5,77;-;-;81,40038461538464;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;81,40038461538464;Euro;-;-;-
+04.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Bestätigte Arbeitszeit;255;Reitz;Jonas;Hopplo Campus;Barista;14:00;19:00;05:00;5;0;;;;;05:00;5;5;-;-;70,5;5;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Bestätigte Arbeitszeit;255;Reitz;Jonas;Hopplo Campus;Barista;14:00;19:03;05:03;5,05;0;;;;;05:03;5,05;5,05;-;-;71,205;5,05;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Bestätigte Arbeitszeit;255;Reitz;Jonas;Hopplo Campus;Barista;11:00;17:04;06:04;6,07;4;17:00;17:04;;;06:00;6;6;-;-;84,6;6;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Bestätigte Arbeitszeit;255;Reitz;Jonas;Hopplo Campus;Barista;11:01;16:58;05:57;5,95;0;;;;;05:57;5,95;5,95;-;-;83,895;5,95;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Nicht anwesend;255;Reitz;Jonas;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Urlaub (bezahlt);293;Schenk;Hanna;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;4,95;-;-;69,82704545454546;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;69,82704545454546;Euro;-;-;-
+03.04.2025;Urlaub (bezahlt);293;Schenk;Hanna;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;4,95;-;-;69,82704545454546;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;69,82704545454546;Euro;-;-;-
+04.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Nicht anwesend;293;Schenk;Hanna;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Urlaub (bezahlt);125;Schäfer;Denise;Hopplo Campus;Barista;00:00;00:00;00:00;0;-;;;;;00:00;0;5,36;-;-;75,640625;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;75,640625;Euro;-;-;-
+05.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Bestätigte Arbeitszeit;125;Schäfer;Denise;Hopplo Campus;Barista;13:00;19:00;06:00;6;0;;;;;06:00;6;6;-;-;84,6;6;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Bestätigte Arbeitszeit;125;Schäfer;Denise;Hopplo Campus;Barista;08:30;14:30;06:00;6;0;;;;;06:00;6;6;-;-;84,6;6;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Bestätigte Arbeitszeit;125;Schäfer;Denise;Hopplo Campus;interne Aushilfen;16:00;22:00;06:00;6;0;;;;;06:00;6;6;-;-;84,6;6;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Krankheit (bezahlt);125;Schäfer;Denise;Hopplo Campus;Barista;08:00;16:30;00:00;0;-;;;;;00:00;0;5,44;-;-;76,63611111111112;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;76,63611111111112;Euro;-;-;-
+25.04.2025;Bestätigte Arbeitszeit;125;Schäfer;Denise;Hopplo Campus;Barista;08:30;16:45;08:15;8,25;30;14:30;15:00;;;07:45;7,75;7,75;-;-;109,27499999999999;7,75;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Nicht anwesend;125;Schäfer;Denise;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;0;14,1;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Bestätigte Arbeitszeit;342;Siddiqui;Nabiha;Hopplo Campus;Barista;10:00;12:49;02:49;2,82;0;;;;;02:49;2,82;2,82;-;-;36,10966666666667;-;-;-;-;-;-;-;-;-;2,82;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Bestätigte Arbeitszeit;342;Siddiqui;Nabiha;Hopplo Campus;Barista;11:47;16:08;04:21;4,35;0;;;;;04:21;4,35;4,35;-;-;55,766999999999996;-;-;-;-;-;-;-;-;-;4,35;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Bestätigte Arbeitszeit;342;Siddiqui;Nabiha;Hopplo Campus;Barista;18:30;20:00;01:30;1,5;0;;;;;01:30;1,5;1,5;-;-;19,23;-;-;-;-;-;-;-;-;-;1,5;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Bestätigte Arbeitszeit;342;Siddiqui;Nabiha;Hopplo Campus;Barista;11:45;17:11;05:26;5,43;0;;;;;05:26;5,43;5,43;-;-;69,65533333333333;-;-;-;-;-;-;-;-;-;5,43;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Bestätigte Arbeitszeit;342;Siddiqui;Nabiha;Hopplo Campus;Barista;13:46;18:59;05:13;5,22;0;;;;;05:13;5,22;5,22;-;-;66,87766666666667;-;-;-;-;-;-;-;-;-;5,22;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Nicht anwesend;342;Siddiqui;Nabiha;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Bestätigte Arbeitszeit;312;Smulska;Khrystyna;Hopplo Campus;Barista;08:00;16:30;08:30;8,5;30;14:00;14:30;;;08:00;8;8;-;-;117,92;-;-;-;-;-;-;-;-;-;-;-;-;8;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Bestätigte Arbeitszeit;312;Smulska;Khrystyna;Hopplo Campus;Barista;12:06;19:16;07:10;7,17;30;18:06;18:36;;;06:40;6,67;6,67;-;-;98,26666666666667;-;-;-;-;-;-;-;-;-;-;-;-;6,67;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Bestätigte Arbeitszeit;312;Smulska;Khrystyna;Hopplo Campus;Barista;13:05;19:24;06:19;6,32;19;19:05;19:24;;;06:00;6;6;-;-;88,44;-;-;-;-;-;-;-;-;-;-;-;-;6;14,74;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Bestätigte Arbeitszeit;215;Webert;Lilly;Hopplo Campus;Barista;12:00;14:00;02:00;2;0;;;;;02:00;2;2;-;-;31,2;-;-;-;2;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+03.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+09.04.2025;Bestätigte Arbeitszeit;215;Webert;Lilly;Hopplo Campus;Barista;12:01;17:01;05:00;5;0;;;;;05:00;5;5;-;-;78;-;-;-;5;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+16.04.2025;Bestätigte Arbeitszeit;215;Webert;Lilly;Hopplo Campus;Barista;11:55;16:59;05:04;5,07;0;;;;;05:04;5,07;5,07;-;-;79,03999999999999;-;-;-;5,07;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+23.04.2025;Bestätigte Arbeitszeit;215;Webert;Lilly;Hopplo Campus;Barista;08:07;14:37;06:30;6,5;30;14:07;14:37;;;06:00;6;6;-;-;93,6;-;-;-;6;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Nicht anwesend;215;Webert;Lilly;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;0;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+30.04.2025;Bestätigte Arbeitszeit;215;Webert;Lilly;Hopplo Campus;Barista;11:06;17:03;05:57;5,95;0;;;;;05:57;5,95;5,95;-;-;92,82000000000001;-;-;-;5,95;15,6;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+01.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+02.04.2025;Krankheit (bezahlt);263;Winzer Ortega;Maresa;Hopplo Campus;Barista;08:45;15:30;00:00;0;-;;;;;00:00;0;5,86;-;-;75,13588333333334;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;1;75,13588333333334;Euro;-;-;-
+03.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+04.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+05.04.2025;Bestätigte Arbeitszeit;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;12:12;17:01;04:49;4,82;0;;;;;04:49;4,82;4,82;-;-;61,74966666666666;-;-;-;-;-;-;-;-;-;4,82;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+06.04.2025;Bestätigte Arbeitszeit;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;11:03;18:00;06:57;6,95;30;17:03;17:33;;;06:27;6,45;6,45;-;-;82,68900000000001;-;-;-;-;-;-;-;-;-;6,45;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+07.04.2025;Bestätigte Arbeitszeit;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;13:13;19:09;05:56;5,93;0;;;;;05:56;5,93;5,93;-;-;76,06533333333334;-;-;-;-;-;-;-;-;-;5,93;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+08.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+10.04.2025;Bestätigte Arbeitszeit;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;12:05;17:06;05:01;5,02;0;;;;;05:01;5,02;5,02;-;-;64,31366666666666;-;-;-;-;-;-;-;-;-;5,02;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+11.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+12.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+13.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+14.04.2025;Bestätigte Arbeitszeit;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;13:03;19:20;06:17;6,28;17;19:03;19:20;;;06:00;6;6;-;-;76,92;-;-;-;-;-;-;-;-;-;6;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+15.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+17.04.2025;Bestätigte Arbeitszeit;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;14:03;19:00;04:57;4,95;0;;;;;04:57;4,95;4,95;-;-;63,459;-;-;-;-;-;-;-;-;-;4,95;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+18.04.2025;Nicht anwesend(Karfreitag);263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+19.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+20.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+21.04.2025;Nicht anwesend(Ostermontag);263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+22.04.2025;Bestätigte Arbeitszeit;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;17:46;18:59;01:13;1,22;0;;;;;01:13;1,22;1,22;-;-;15,597666666666665;-;-;-;-;-;-;-;-;-;1,22;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+24.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+25.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+26.04.2025;Bestätigte Arbeitszeit;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;10:00;16:00;06:00;6;0;;;;;06:00;6;6;-;-;76,92;-;-;-;-;-;-;-;-;-;6;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+27.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+28.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
+29.04.2025;Nicht anwesend;263;Winzer Ortega;Maresa;Hopplo Campus;Barista;-;-;-;-;-;;;;;-;-;-;-;-;0;-;-;-;-;-;-;-;-;-;0;12,82;Euro;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-;-
