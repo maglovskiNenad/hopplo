@@ -2,6 +2,7 @@ import pandas as pd
 import chardet
 import re
 
+
 def load_and_clean_csv_data(filepath,delimiter=";"):
     """""
     Reads a CSV file with automatic encoding detection, and cleans the column names.
@@ -73,9 +74,15 @@ def extract_confirmed_work_hours(data):
             except:
                 dauer_brutto = 0.0
 
+            try:
+                tag_dt = pd.to_datetime(tag, dayfirst=True, errors='coerce')
+                tag_short = tag_dt.strftime('%d.%m.')
+            except:
+                tag_short = str(tag)[:6] + "."
+
             if vorname not in perso:
                 perso[vorname] = {}
-            perso[vorname][tag] = dauer_brutto
+            perso[vorname][tag_short] = dauer_brutto
     return perso
 
 
@@ -95,10 +102,10 @@ def adding_new_sum_row(data):
         Returns:
             pandas.DataFrame: A sorted DataFrame with a new summary row at the bottom.
     """
-    new_list = pd.DataFrame.from_dict(data,orient="index")
+    new_list = pd.DataFrame.from_dict(data,orient="index").fillna(0)
     new_list = new_list.sort_index()
     new_list = new_list[sorted(new_list.columns)]
-    new_list.loc["SUM"] = new_list.sum(numeric_only=True)
+    new_list.loc["SUM"] = new_list.sum(numeric_only=True).fillna(0)
     
     return new_list
 
@@ -133,13 +140,55 @@ def display_and_clean_daily_tip(data):
     daily_tip_amount.columns =  [clean_colums(c) for c in daily_tip_amount.columns]
     return daily_tip_amount
 
-#TODO spajanje dve tabele
-#TODO obracun po danu i po satu
-#TODO tabela ko je koliko imao po danu gde na kraju dobija se suma koliko ko treba da ima, ta tabela sa decimalnim satim treba recimo da se zameni sa satim da bi na kraju dobio sumu na kraju dana koja treba svakome da se uplati
-#TODO smisliti hierarhiju funkcija tako da na jedn pozivaju drugu da sve sto se desava dobije se jednim klikom ili jednostavno da se namesti vise opcija da se mogu vise stvari videti
-#TODO ubacivanje dokumenata koji mogu da se citaju na taj naci
-#TODO dozvola promena naziva dokumenta
-#TODO videti nacin da se podigne na neki drugi nivo preko tk intera prikaz
+def meargin_two_lists(hour,daily_tip): 
+        '''
+        This function takes two inputs, hour and daily_tip, which appear to be pandas DataFrames.
+            It extracts the first row from the daily_tip DataFrame and fills any missing values (NaN) with 0, storing this in tips.
+
+            It extracts the 23rd row (index 22) from the hour DataFrame and also fills missing values with 0, storing this in suma.
+
+            From the tips data, it drops the columns named 'Bezeichnung' and 'Zeitraum'.
+
+            It ensures that both suma and the modified tips (stored in t) have no missing values by filling any remaining NaNs with 0.
+
+            It finds the common indices (columns) between suma and t and keeps only those common indices for both.
+
+            Both filtered series are converted to floats.
+
+            Finally, it calculates the element-wise division of t by suma and prints the resulting series.
+
+        '''       
+        tips = daily_tip.iloc[0].fillna(0)
+        suma = hour.iloc[22].fillna(0)
+        tips = tips.drop(['Bezeichnung', 'Zeitraum'])
+
+        suma = suma.fillna(0)
+        tips = tips.fillna(0)
+
+        zajednocko = suma.index.intersection(tips.index)
+
+        suma = suma.loc[zajednocko].astype(float)
+        tips = tips.loc[zajednocko].astype(float)
+
+        rez = tips/suma
+        print(rez)
+
+
+
+       
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 df = load_and_clean_csv_data("data/Detailexport.csv") #Reads a CSV file with automatic encoding detection, and cleans the column names.
@@ -147,5 +196,8 @@ data = extract_confirmed_work_hours(df)#Extracts and organizes confirmed working
 new_list_perso = adding_new_sum_row(data)#Converts a nested dictionary of data into a sorted DataFrame and adds a summary row.
 daily_amoutn = display_and_clean_daily_tip("data/export.csv")#Reads and cleans a daily tip amount from a tab-delimited file.
 
-print(new_list_perso)
-print(daily_amoutn)
+
+
+merged = meargin_two_lists(new_list_perso,daily_amoutn)
+
+merged
