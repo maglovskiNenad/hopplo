@@ -1,0 +1,1 @@
+print(hourly_tips)

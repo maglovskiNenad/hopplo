@@ -2,7 +2,6 @@ import pandas as pd
 import chardet
 import re
 
-
 def load_and_clean_csv_data(filepath,delimiter=";"):
     """""
     Reads a CSV file with automatic encoding detection, and cleans the column names.
@@ -85,10 +84,9 @@ def extract_confirmed_work_hours(data):
             perso[vorname][tag_short] = dauer_brutto
     return perso
 
-
-def adding_new_sum_row(data):
+def clean_list_data(data):
     """
-        Converts a nested dictionary of data into a sorted DataFrame and adds a summary row.
+        Converts a nested dictionary of data into a sorted DataFrame.
 
         This function:
         - Converts the input dictionary (e.g., {name: {date: hours}}) to a pandas DataFrame.
@@ -97,16 +95,12 @@ def adding_new_sum_row(data):
 
         Parameters:
             data (dict): Nested dictionary with structure {key: {subkey: value}}, typically representing
-                         {person: {date: hours}}.
-
-        Returns:
-            pandas.DataFrame: A sorted DataFrame with a new summary row at the bottom.
+                         {person: {date: hours}}
     """
     new_list = pd.DataFrame.from_dict(data,orient="index").fillna(0)
     new_list = new_list.sort_index()
     new_list = new_list[sorted(new_list.columns)]
     new_list.loc["SUM"] = new_list.sum(numeric_only=True).fillna(0)
-    
     return new_list
 
 def display_and_clean_daily_tip(data):
@@ -140,64 +134,92 @@ def display_and_clean_daily_tip(data):
     daily_tip_amount.columns =  [clean_colums(c) for c in daily_tip_amount.columns]
     return daily_tip_amount
 
-def meargin_two_lists(hour,daily_tip): 
-        '''
-        This function takes two inputs, hour and daily_tip, which appear to be pandas DataFrames.
-            It extracts the first row from the daily_tip DataFrame and fills any missing values (NaN) with 0, storing this in tips.
-
-            It extracts the 23rd row (index 22) from the hour DataFrame and also fills missing values with 0, storing this in suma.
-
-            From the tips data, it drops the columns named 'Bezeichnung' and 'Zeitraum'.
-
-            It ensures that both suma and the modified tips (stored in t) have no missing values by filling any remaining NaNs with 0.
-
-            It finds the common indices (columns) between suma and t and keeps only those common indices for both.
-
-            Both filtered series are converted to floats.
-
-            Finally, it calculates the element-wise division of t by suma and prints the resulting series.
-
-        '''       
-        tips = daily_tip.iloc[0].fillna(0)
-        suma = hour.iloc[22].fillna(0)
-        tips = tips.drop(['Bezeichnung', 'Zeitraum'])
-
-        suma = suma.fillna(0)
-        tips = tips.fillna(0)
-
-        zajednocko = suma.index.intersection(tips.index)
-
-        suma = suma.loc[zajednocko].astype(float)
-        tips = tips.loc[zajednocko].astype(float)
-
-        rez = tips/suma
-        print(rez)
-
-
-
+def get_hourly_tip(hour,daily_tip): 
        
+        '''
+        This script calculates the ratio between daily tips and hourly totals for a specific day.
+
+            Steps:
+            1. Select the first row from the `daily_tip` DataFrame and replace missing values with 0.
+            2. Select the 23rd row (index 22) from the `hour` DataFrame and also replace missing values with 0.
+            3. Remove non-numeric or irrelevant columns ('Bezeichnung', 'Zeitraum') from the tips data.
+            4. Ensure all remaining missing values in both Series are replaced with 0.
+            5. Identify the common columns (indexes) shared between both Series.
+            6. Filter both Series to only include these common columns and convert the data to float.
+            7. Compute the ratio (score) of tips to hourly values for each common column.
+            8. Print the resulting ratio.
+
+        The final output is a Series showing the relative amount of tips per total hourly sum for each shared category.
+        '''
+        tips = daily_tip.iloc[0].fillna(0)
+        sume = hour.iloc[22].fillna(0)
+        tips = tips.drop(['Bezeichnung', 'Zeitraum'])
+        sume = sume.fillna(0)
+        tips = tips.fillna(0)
+        all_together = sume.index.intersection(tips.index)
+        sume = sume.loc[all_together].astype(float)
+        tips = tips.loc[all_together].astype(float)
+        score = tips/sume
+        return score
+
+
+def calculation_merging_two_lists(list_of_worked_hours_and_workers,hourly_tips_on_day):
+    '''
+        Merges a DataFrame of worked hours with hourly tip values and calculates total earnings per worker.
+
+        Parameters:
+        - list_of_worked_hours_and_workers (pd.DataFrame): A DataFrame where rows represent workers and columns represent hours worked. 
+          If a "SUM" row is present, it will be excluded before processing.
+        - hourly_tips_on_day (list or pd.Series): A list or Series containing tip values per hour for each column.
+
+        Process:
+        1. Removes the "SUM" row from the input DataFrame if it exists, to avoid duplicating totals.
+        2. Adds a temporary "tips" row with the hourly tip values.
+        3. For each column (i.e., hour), multiplies all values greater than 0 (excluding the "tips" row)
+           by the tip value from the "tips" row.
+        4. Removes the "tips" row after applying the multiplication.
+        5. Adds a new "SUM" row that contains the column-wise totals.
+        6. Adds a new "TRINKGELD" column (German for "tip") that contains row-wise totals (left to right), rounded to 2 decimals.
+
+        Returns:
+        - A new DataFrame with updated earnings per worker and overall summaries.
+    '''
+    if "SUM" in list_of_worked_hours_and_workers.index:
+        new_list = list_of_worked_hours_and_workers.drop("SUM",axis=0)
+    else:
+        new_list = list_of_worked_hours_and_workers.copy()
+
+    if isinstance(hourly_tips_on_day,list):
+        assert len(hourly_tips_on_day) == len(new_list.columns)
+        new_list.loc["tips"] = hourly_tips_on_day
+    elif isinstance(hourly_tips_on_day,pd.Series):
+        new_list.loc["tips"] = hourly_tips_on_day
+
+    new_list = new_list.copy()
+
+    for col in new_list.columns:
+        last_value = new_list[col].iloc[-1]
+
+        mask = (new_list[col] > 0) & (new_list.index != new_list.index[-1])
+
+        new_list.loc[mask,col] = new_list.loc[mask,col] * last_value
+
+    if "tips" in new_list.index:
+        new_list = new_list.drop("tips",axis=0)
+    else:
+        new_list = new_list.copy()
+
     
-
-
-
-
-
-
-
-
-
-
-
-
-
+    new_list.loc["SUM"] = new_list.sum(numeric_only=True).fillna(0)
+    new_list["TRINKGELD"] = new_list.sum(axis=1,numeric_only=True).round(2)
+   
+    return new_list
 
 df = load_and_clean_csv_data("data/Detailexport.csv") #Reads a CSV file with automatic encoding detection, and cleans the column names.
 data = extract_confirmed_work_hours(df)#Extracts and organizes confirmed working hours per person by date.
-new_list_perso = adding_new_sum_row(data)#Converts a nested dictionary of data into a sorted DataFrame and adds a summary row.
-daily_amoutn = display_and_clean_daily_tip("data/export.csv")#Reads and cleans a daily tip amount from a tab-delimited file.
+new_list_perso = clean_list_data(data)#Converts a nested dictionary of data into a sorted DataFrame and adds a summary row.
+daily_amount = display_and_clean_daily_tip("data/export.csv")#Reads and cleans a daily tip amount from a tab-delimited file.
+hourly_tips = get_hourly_tip(new_list_perso,daily_amount)#This script calculates the ratio between daily tips and hourly totals for a specific day.
+calulation = calculation_merging_two_lists(new_list_perso,hourly_tips)#Merges a DataFrame of worked hours with hourly tip values and calculates total earnings per worker
 
-
-
-merged = meargin_two_lists(new_list_perso,daily_amoutn)
-
-merged
+print(calulation)
