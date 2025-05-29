@@ -1,6 +1,9 @@
 import pandas as pd
 import chardet
 import re
+import customtkinter as ck
+import tkinter 
+#from tkinterdnd2 import DND_FILES, TkinterDnD
 
 def load_and_clean_csv_data(filepath,delimiter=";"):
     """""
@@ -212,7 +215,7 @@ def calculation_merging_two_lists(list_of_worked_hours_and_workers,hourly_tips_o
     
     new_list.loc["SUM"] = new_list.sum(numeric_only=True).fillna(0)
     new_list["TRINKGELD"] = new_list.sum(axis=1,numeric_only=True).round(2)
-   
+
     return new_list
 
 df = load_and_clean_csv_data("data/Detailexport.csv") #Reads a CSV file with automatic encoding detection, and cleans the column names.
@@ -220,6 +223,26 @@ data = extract_confirmed_work_hours(df)#Extracts and organizes confirmed working
 new_list_perso = clean_list_data(data)#Converts a nested dictionary of data into a sorted DataFrame and adds a summary row.
 daily_amount = display_and_clean_daily_tip("data/export.csv")#Reads and cleans a daily tip amount from a tab-delimited file.
 hourly_tips = get_hourly_tip(new_list_perso,daily_amount)#This script calculates the ratio between daily tips and hourly totals for a specific day.
-calulation = calculation_merging_two_lists(new_list_perso,hourly_tips)#Merges a DataFrame of worked hours with hourly tip values and calculates total earnings per worker
+calculation = calculation_merging_two_lists(new_list_perso,hourly_tips)#Merges a DataFrame of worked hours with hourly tip values and calculates total earnings per worker
 
-print(calulation)
+
+app = ck.CTk()
+app.title("Trinkgeld Geret")
+app.geometry("750x600")
+
+textbox = ck.CTkTextbox(app, width=700, height=400)
+textbox.grid(row=1, column=0, columnspan=2, padx=20, pady=20)
+
+def toggle_theme():
+    current_mode = app._get_appearance_mode()
+    app._set_appearance_mode("dark" if current_mode == "light" else "light")
+
+button = ck.CTkButton(app, text="my button", command=toggle_theme)
+button.grid(row=0, column=0, padx=20, pady=20, sticky="ew")
+
+toggle_btn = ck.CTkButton(app,text="Toggle theme",command=toggle_theme)
+toggle_btn.grid(row=0, column=1, padx=20, pady=20, sticky="ew")
+
+textbox = ck.CTkTextbox(app, width=300, height=100)
+
+app.mainloop()

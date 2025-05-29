@@ -1,1 +1,0 @@
-print(hourly_tips)
