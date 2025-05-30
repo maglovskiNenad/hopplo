@@ -245,13 +245,26 @@ class App(ctk.CTk):
         #sidebar controller
         self.grid_columnconfigure(1, weight=1)
         self.grid_rowconfigure(0, weight=1)
-        
-        self.sidebar = SidebarFrame(self, self)
+
+        #sidebar design
+        self.sidebar_container = ctk.CTkFrame(self, corner_radius=10)
+        self.sidebar_container.grid(row=0, column=0, sticky="ns", padx=20, pady=20)
+        self.sidebar_container.grid_rowconfigure(0, weight=1)
+        self.sidebar_container.grid_columnconfigure(0, weight=1)
+
+        #sidebar
+        self.sidebar = SidebarFrame(self.sidebar_container, self)
         self.sidebar.grid(row=0, column=0, sticky="ns")
 
-        self.main_frame = MainFrame(self)
-        self.main_frame.grid(row=0, column=1, sticky="nsew")
-        
+        #main poge design
+        self.main_content = ctk.CTkFrame(self, corner_radius=10)
+        self.main_content.grid(row=0, column=1, sticky="nswe", padx=20, pady=20)
+        self.main_content.grid_rowconfigure(0, weight=1)
+        self.main_content.grid_columnconfigure(0, weight=1)
+
+        #main page
+        self.main_frame = MainFrame(self.main_content)
+        self.main_frame.grid(row=0, column=0, sticky="ns")
 
         #home page
         self.show_home()
@@ -279,12 +292,14 @@ class MainFrame(ctk.CTkFrame):
     def __init__(self, parent):
         super().__init__(parent)
         self.current_page = None
+        
 
     def show_page(self, PageClass, **kwargs):
         if self.current_page:
             self.current_page.destroy()
         self.current_page = PageClass(self, **kwargs)
         self.current_page.pack(fill="both", expand=True)
+        
 
 class HomePage(ctk.CTkFrame):
     def __init__(self, parent):
