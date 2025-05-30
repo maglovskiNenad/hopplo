@@ -242,56 +242,67 @@ class App(ctk.CTk):
 
         self.geometry(f"{window_width}x{window_height}+{x}+{y}")
 
-        #main grid
+        #sidebar controller
         self.grid_columnconfigure(1, weight=1)
         self.grid_rowconfigure(0, weight=1)
         
-        #sidebar
-        self.sidebar_frame = ctk.CTkFrame(self, width=200, corner_radius=0)
-        self.sidebar_frame.grid(row=0, column=0, sticky="nswe")
-        self.sidebar_frame.grid_rowconfigure(5, weight=1)  # za odvajanje donjih dugmadi
+        self.sidebar = SidebarFrame(self, self)
+        self.sidebar.grid(row=0, column=0, sticky="ns")
 
-        self.logo_label = ctk.CTkLabel(self.sidebar_frame, text="App",font=ctk.CTkFont(size=20, weight="bold"))
-        self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
-
-        self.home_button = ctk.CTkButton(self.sidebar_frame, text="Home",command=self.show_home)
-        self.home_button.grid(row=1, column=0, padx=20, pady=10)
-
-        self.settings_button = ctk.CTkButton(self.sidebar_frame, text="Settings",command=self.show_settings)
-        self.settings_button.grid(row=2, column=0, padx=20, pady=10)
+        self.main_frame = MainFrame(self)
+        self.main_frame.grid(row=0, column=1, sticky="nsew")
         
-        self.settings_button = ctk.CTkButton(self.sidebar_frame, text="Main",command=self.show_main_page)
-        self.settings_button.grid(row=4, column=0, padx=20, pady=10)
 
-        #main content
-        self.main_content = ctk.CTkFrame(self, corner_radius=10)
-        self.main_content.grid(row=0, column=1, sticky="nswe", padx=20, pady=20)
-        self.main_content.grid_rowconfigure(0, weight=1)
-        self.main_content.grid_columnconfigure(0, weight=1)
-
-        #intial page
+        #home page
         self.show_home()
-    
-    def clear_main_content(self):
-        for widget in self.main_content.winfo_children():
-            widget.destroy()
 
     def show_home(self):
-        self.clear_main_content()
-        label = ctk.CTkLabel(self.main_content, text="Welcome to the Home Page!", font=("Arial", 18))
-        label.grid(row=0, column=0, padx=20, pady=20)
+        self.main_frame.show_page(HomePage)
     
     def show_settings(self):
-        self.clear_main_content()
-        label = ctk.CTkLabel(self.main_content, text="Settings Page", font=("Arial", 18))
-        label.grid(row=0, column=0, padx=20, pady=20)
+        self.main_frame.show_page(Settings)
     
-    def show_main_page(self):
-        self.clear_main_content()
-        label = ctk.CTkLabel(self.main_content, text="Main Page", font=("Arial", 18))
-        label.grid(row=0, column=0, padx=20, pady=20)
+    def show_trinkgeld_page(self):
+        self.main_frame.show_page(Trinkgeld_Actions)
 
+class SidebarFrame(ctk.CTkFrame):
+    def __init__(self, parent, controller):
+        super().__init__(parent, width=200)
+        self.grid_rowconfigure(4, weight=1)
 
+        ctk.CTkLabel(self, text="App", font=ctk.CTkFont(size=16, weight="bold")).pack(pady=20)
+        ctk.CTkButton(self, text="Home", command=controller.show_home).pack(pady=10, padx=10)
+        ctk.CTkButton(self,text="Settings",command=controller.show_settings).pack(pady=10, padx=10)
+        ctk.CTkButton(self,text="Trinkgeld",command=controller.show_trinkgeld_page).pack(pady=10, padx=10)
+
+class MainFrame(ctk.CTkFrame):
+    def __init__(self, parent):
+        super().__init__(parent)
+        self.current_page = None
+
+    def show_page(self, PageClass, **kwargs):
+        if self.current_page:
+            self.current_page.destroy()
+        self.current_page = PageClass(self, **kwargs)
+        self.current_page.pack(fill="both", expand=True)
+
+class HomePage(ctk.CTkFrame):
+    def __init__(self, parent):
+        super().__init__(parent)
+        ctk.CTkLabel(self, text="Welcome", font=ctk.CTkFont(size=20)).pack(pady=20)
+        ctk.CTkLabel(self, text="This is the home page.").pack() 
+
+class Settings(ctk.CTkFrame):
+    def __init__(self,parent):
+        super().__init__(parent)
+        ctk.CTkLabel(self, text="Hmm...", font=ctk.CTkFont(size=20)).pack(pady=20)
+        ctk.CTkLabel(self, text="Settings page.").pack() 
+
+class Trinkgeld_Actions(ctk.CTkFrame):
+    def __init__(self,parent):
+        super().__init__(parent)
+        ctk.CTkLabel(self, text="Hier soll alles passieren...", font=ctk.CTkFont(size=20)).pack(pady=20)
+    
 if __name__ == "__main__":
     app = App()
     app.mainloop()
