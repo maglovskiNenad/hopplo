@@ -1,8 +1,7 @@
 import pandas as pd
 import chardet
 import re
-import customtkinter as ck
-import tkinter 
+import customtkinter as ctk
 #from tkinterdnd2 import DND_FILES, TkinterDnD
 
 def load_and_clean_csv_data(filepath,delimiter=";"):
@@ -226,23 +225,73 @@ hourly_tips = get_hourly_tip(new_list_perso,daily_amount)#This script calculates
 calculation = calculation_merging_two_lists(new_list_perso,hourly_tips)#Merges a DataFrame of worked hours with hourly tip values and calculates total earnings per worker
 
 
-app = ck.CTk()
-app.title("Trinkgeld Geret")
-app.geometry("750x600")
+#Customtkinter classes
+class App(ctk.CTk):
+    def __init__(self,):
+        super().__init__()
+        self.title("\U0001F601")
+        
+        screen_width = self.winfo_screenwidth()
+        screen_height = self.winfo_screenheight()
 
-textbox = ck.CTkTextbox(app, width=700, height=400)
-textbox.grid(row=1, column=0, columnspan=2, padx=20, pady=20)
+        window_width = int(screen_width * 0.6)
+        window_height = int(screen_height * 0.6)
 
-def toggle_theme():
-    current_mode = app._get_appearance_mode()
-    app._set_appearance_mode("dark" if current_mode == "light" else "light")
+        x = int((screen_width - window_width) / 2)
+        y = int((screen_height - window_height) / 2)
 
-button = ck.CTkButton(app, text="my button", command=toggle_theme)
-button.grid(row=0, column=0, padx=20, pady=20, sticky="ew")
+        self.geometry(f"{window_width}x{window_height}+{x}+{y}")
 
-toggle_btn = ck.CTkButton(app,text="Toggle theme",command=toggle_theme)
-toggle_btn.grid(row=0, column=1, padx=20, pady=20, sticky="ew")
+        #main grid
+        self.grid_columnconfigure(1, weight=1)
+        self.grid_rowconfigure(0, weight=1)
+        
+        #sidebar
+        self.sidebar_frame = ctk.CTkFrame(self, width=200, corner_radius=0)
+        self.sidebar_frame.grid(row=0, column=0, sticky="nswe")
+        self.sidebar_frame.grid_rowconfigure(5, weight=1)  # za odvajanje donjih dugmadi
 
-textbox = ck.CTkTextbox(app, width=300, height=100)
+        self.logo_label = ctk.CTkLabel(self.sidebar_frame, text="App",font=ctk.CTkFont(size=20, weight="bold"))
+        self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
 
-app.mainloop()
+        self.home_button = ctk.CTkButton(self.sidebar_frame, text="Home",command=self.show_home)
+        self.home_button.grid(row=1, column=0, padx=20, pady=10)
+
+        self.settings_button = ctk.CTkButton(self.sidebar_frame, text="Settings",command=self.show_settings)
+        self.settings_button.grid(row=2, column=0, padx=20, pady=10)
+        
+        self.settings_button = ctk.CTkButton(self.sidebar_frame, text="Main",command=self.show_main_page)
+        self.settings_button.grid(row=4, column=0, padx=20, pady=10)
+
+        #main content
+        self.main_content = ctk.CTkFrame(self, corner_radius=10)
+        self.main_content.grid(row=0, column=1, sticky="nswe", padx=20, pady=20)
+        self.main_content.grid_rowconfigure(0, weight=1)
+        self.main_content.grid_columnconfigure(0, weight=1)
+
+        #intial page
+        self.show_home()
+    
+    def clear_main_content(self):
+        for widget in self.main_content.winfo_children():
+            widget.destroy()
+
+    def show_home(self):
+        self.clear_main_content()
+        label = ctk.CTkLabel(self.main_content, text="Welcome to the Home Page!", font=("Arial", 18))
+        label.grid(row=0, column=0, padx=20, pady=20)
+    
+    def show_settings(self):
+        self.clear_main_content()
+        label = ctk.CTkLabel(self.main_content, text="Settings Page", font=("Arial", 18))
+        label.grid(row=0, column=0, padx=20, pady=20)
+    
+    def show_main_page(self):
+        self.clear_main_content()
+        label = ctk.CTkLabel(self.main_content, text="Main Page", font=("Arial", 18))
+        label.grid(row=0, column=0, padx=20, pady=20)
+
+
+if __name__ == "__main__":
+    app = App()
+    app.mainloop()
