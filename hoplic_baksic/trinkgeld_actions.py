@@ -38,7 +38,7 @@ class Trinkgeld_Actions(ctk.CTkFrame):
 
         c = pd.DataFrame(calculation)
     
-        formatted_df = tabulate(c, headers='keys', tablefmt='grid', floatfmt=".2f", showindex=True)
+        formatted_df = tabulate(c, headers='keys', tablefmt='grid', showindex=True) #floatfmt=".2f"
 
         textbox.insert("0.0",formatted_df)
     
@@ -95,6 +95,7 @@ class Trinkgeld_Actions(ctk.CTkFrame):
         new_list = new_list.sort_index()
         new_list = new_list[sorted(new_list.columns)]
         new_list.loc["SUM"] = new_list.sum(numeric_only=True).fillna(0)
+
         return new_list
 
     def display_and_clean_daily_tip(self,data):
@@ -102,24 +103,31 @@ class Trinkgeld_Actions(ctk.CTkFrame):
             daily_tip_amount = pd.read_csv(tip_amount_list,delimiter="\t",nrows=1)
             daily_tip_amount = daily_tip_amount.map(lambda x:x.replace('â‚¬', '').replace(",",".").strip() if isinstance(x,str) else x)
 
-
             def clean_colums(col):
                 col = re.sub(r'\ufeff', '', col)
+
                 return col
 
         daily_tip_amount.columns =  [clean_colums(c) for c in daily_tip_amount.columns]
+
         return daily_tip_amount
 
     def get_hourly_tip(self,hour,daily_tip): 
             tips = daily_tip.iloc[0].fillna(0)
             sume = hour.iloc[-1].fillna(0)
+
             tips = tips.drop(['Bezeichnung', 'Zeitraum'])
+
             sume = sume.fillna(0)
             tips = tips.fillna(0)
+
             all_together = sume.index.intersection(tips.index)
+
             sume = sume.loc[all_together].astype(float)
             tips = tips.loc[all_together].astype(float)
+
             score = tips/sume
+
             return score
 
 
@@ -149,9 +157,10 @@ class Trinkgeld_Actions(ctk.CTkFrame):
         else:
             new_list = new_list.copy()
 
-        new_list["TRINKGELD"] = new_list.sum(axis=1,numeric_only=True).round(2)
+        new_list["TRINKGELD"] = new_list.sum(axis=1,numeric_only=True)
         new_list["TRINKGELD"] = new_list.iloc[:,-1]
         cols = ['TRINKGELD'] + [col for col in new_list.columns if col != 'TRINKGELD']
+
         new_list.loc["SUM"] = new_list.sum(numeric_only=True).fillna(0)
 
         return new_list[cols]
