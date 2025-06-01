@@ -112,7 +112,7 @@ class Trinkgeld_Actions(ctk.CTkFrame):
 
     def get_hourly_tip(self,hour,daily_tip): 
             tips = daily_tip.iloc[0].fillna(0)
-            sume = hour.iloc[22].fillna(0)
+            sume = hour.iloc[-1].fillna(0)
             tips = tips.drop(['Bezeichnung', 'Zeitraum'])
             sume = sume.fillna(0)
             tips = tips.fillna(0)
@@ -149,9 +149,9 @@ class Trinkgeld_Actions(ctk.CTkFrame):
         else:
             new_list = new_list.copy()
 
-        new_list.loc["SUM"] = new_list.sum(numeric_only=True).fillna(0)
         new_list["TRINKGELD"] = new_list.sum(axis=1,numeric_only=True).round(2)
         new_list["TRINKGELD"] = new_list.iloc[:,-1]
         cols = ['TRINKGELD'] + [col for col in new_list.columns if col != 'TRINKGELD']
+        new_list.loc["SUM"] = new_list.sum(numeric_only=True).fillna(0)
 
         return new_list[cols]
