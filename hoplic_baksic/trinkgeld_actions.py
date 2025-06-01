@@ -38,7 +38,7 @@ class Trinkgeld_Actions(ctk.CTkFrame):
 
         c = pd.DataFrame(calculation)
     
-        formatted_df = tabulate(c, headers='keys', tablefmt='grid', showindex=True) #floatfmt=".2f"
+        formatted_df = tabulate(c, headers='keys', tablefmt='grid',floatfmt=".3f", showindex=True) #floatfmt=".2f"
 
         textbox.insert("0.0",formatted_df)
     
@@ -157,10 +157,10 @@ class Trinkgeld_Actions(ctk.CTkFrame):
         else:
             new_list = new_list.copy()
 
-        new_list["TRINKGELD"] = new_list.sum(axis=1,numeric_only=True)
+        new_list["TRINKGELD"] = new_list.sum(axis=1,numeric_only=True).round(2)
         new_list["TRINKGELD"] = new_list.iloc[:,-1]
         cols = ['TRINKGELD'] + [col for col in new_list.columns if col != 'TRINKGELD']
-
+        
         new_list.loc["SUM"] = new_list.sum(numeric_only=True).fillna(0)
 
         return new_list[cols]
