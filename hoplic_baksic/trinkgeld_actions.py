@@ -38,9 +38,9 @@ class Trinkgeld_Actions(ctk.CTkFrame):
 
         c = pd.DataFrame(calculation)
     
-        formatted_df = tabulate(c, headers='keys', tablefmt='grid',floatfmt=".3f", showindex=True) #floatfmt=".2f"
+        formatted_df = tabulate(c, headers='keys', tablefmt='grid',showindex=True) #floatfmt=".2f"
 
-        textbox.insert("0.0",formatted_df)
+        textbox.insert("0.00",formatted_df)
     
     def load_and_clean_csv_data(self,filepath,delimiter=";"):
         with open(filepath,"rb") as f:
@@ -49,6 +49,7 @@ class Trinkgeld_Actions(ctk.CTkFrame):
             encoding = result["encoding"]
 
         df = pd.read_csv(filepath,delimiter=delimiter,encoding=encoding)
+  
 
         def clean_colums(col):
             col = col.strip()                  
@@ -62,7 +63,7 @@ class Trinkgeld_Actions(ctk.CTkFrame):
         return df
     
     def extract_confirmed_work_hours(self,data):
-        df_subset = data[["tag","vorname","typ","dauerbruttodezimal"]] #Taking only four needed rows
+        df_subset = data[["tag","vorname","typ","dauerbruttodezimal","arbeitsbereich"]] #Taking only four needed rows
         hours_liste = df_subset.values.tolist() #Putting all data in the list
 
         perso = {}
@@ -72,8 +73,9 @@ class Trinkgeld_Actions(ctk.CTkFrame):
             vorname = row[1]
             typ = row[2]
             dauer_brutto = row[3]
+            arbeitsbereich = row[4]
 
-            if typ == "Bestätigte Arbeitszeit":
+            if typ == "Bestätigte Arbeitszeit" and arbeitsbereich == "Barista":
                 try:
                     dauer_brutto = float(str(dauer_brutto).replace(",", "."))
                 except:
@@ -88,6 +90,7 @@ class Trinkgeld_Actions(ctk.CTkFrame):
                 if vorname not in perso:
                     perso[vorname] = {}
                 perso[vorname][tag_short] = dauer_brutto
+
         return perso
 
     def clean_list_data(self,data):
@@ -122,14 +125,13 @@ class Trinkgeld_Actions(ctk.CTkFrame):
             tips = tips.fillna(0)
 
             all_together = sume.index.intersection(tips.index)
-
+            
             sume = sume.loc[all_together].astype(float)
             tips = tips.loc[all_together].astype(float)
-
+        
             score = tips/sume
 
             return score
-
 
     def calculation_merging_two_lists(self,list_of_worked_hours_and_workers,hourly_tips_on_day):
         if "SUM" in list_of_worked_hours_and_workers.index:
@@ -148,8 +150,8 @@ class Trinkgeld_Actions(ctk.CTkFrame):
         for col in new_list.columns:
             last_value = new_list[col].iloc[-1]
 
-            mask = (new_list[col] > 0) & (new_list.index != new_list.index[-1])
-
+            mask = (new_list[col] > 0) & (new_list.index != "tips")
+            
             new_list.loc[mask,col] = new_list.loc[mask,col] * last_value
 
         if "tips" in new_list.index:
@@ -160,7 +162,9 @@ class Trinkgeld_Actions(ctk.CTkFrame):
         new_list["TRINKGELD"] = new_list.sum(axis=1,numeric_only=True).round(2)
         new_list["TRINKGELD"] = new_list.iloc[:,-1]
         cols = ['TRINKGELD'] + [col for col in new_list.columns if col != 'TRINKGELD']
-        
+    
+        new_list = new_list.sort_index()
+        new_list = new_list[sorted(new_list.columns)]
         new_list.loc["SUM"] = new_list.sum(numeric_only=True).fillna(0)
 
         return new_list[cols]
