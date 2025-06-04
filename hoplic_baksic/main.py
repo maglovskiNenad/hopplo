@@ -1,12 +1,11 @@
-import pandas as pd
 import customtkinter as ctk
 from home_page import HomePage
 from trinkgeld_actions import Trinkgeld_Actions
 
 #Customtkinter classes
 class App(ctk.CTk):
-    def __init__(self,):
-        super().__init__()
+    def __init__(self,**kwargs):
+        super().__init__(**kwargs)
         self.title("\U0001F601")
         
         screen_width = self.winfo_screenwidth()

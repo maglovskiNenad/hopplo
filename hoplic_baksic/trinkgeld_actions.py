@@ -3,10 +3,12 @@ import chardet
 import re
 import customtkinter as ctk
 from tabulate import tabulate
+from tkinterdnd2 import DND_FILES, TkinterDnD
+from tkinter import END
 
 class Trinkgeld_Actions(ctk.CTkFrame):
-    def __init__(self,parent):
-        super().__init__(parent)
+    def __init__(self,parent,**kwargs):
+        super().__init__(parent,**kwargs)
 
         df = self.load_and_clean_csv_data("data/Detailexport.csv") #Reads a CSV file with automatic encoding detection, and cleans the column names.
         data = self.extract_confirmed_work_hours(df)#Extracts and organizes confirmed working hours per person by date.
@@ -20,6 +22,15 @@ class Trinkgeld_Actions(ctk.CTkFrame):
 
         window_width = int(screen_width * 0.6)
         window_height = int(screen_height * 0.6)
+
+        #Drag and Drop
+        label = ctk.CTkLabel(self,text="Drop It like It's hot...",font=ctk.CTkFont(size=16))
+        label.pack(expand=True)
+
+        drop_frame = ctk.CTkFrame(self,width=window_width/2,height=window_height/4,corner_radius=10)
+        drop_frame.pack(pady=60)
+
+        #https://gist.github.com/RamonWill/f5e9fbc9df2bdceaa176448512e16eea
 
         #Text box 
         textbox= ctk.CTkTextbox(self,width=window_width,height=window_height,font=("Courier New", 10),wrap="none")
@@ -41,6 +52,9 @@ class Trinkgeld_Actions(ctk.CTkFrame):
         formatted_df = tabulate(c, headers='keys', tablefmt='grid',showindex=True) #floatfmt=".2f"
 
         textbox.insert("0.00",formatted_df)
+
+    def handle_drop():
+        pass
     
     def load_and_clean_csv_data(self,filepath,delimiter=";"):
         with open(filepath,"rb") as f:
@@ -50,7 +64,6 @@ class Trinkgeld_Actions(ctk.CTkFrame):
 
         df = pd.read_csv(filepath,delimiter=delimiter,encoding=encoding)
   
-
         def clean_colums(col):
             col = col.strip()                  
             col = re.sub(r'\ufeff', '', col)   
