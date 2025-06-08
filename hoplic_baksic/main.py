@@ -4,8 +4,8 @@ from trinkgeld_actions import Trinkgeld_Actions
 
 #Customtkinter classes
 class App(ctk.CTk):
-    def __init__(self,**kwargs):
-        super().__init__(**kwargs)
+    def __init__(self):
+        super().__init__()
         self.title("\U0001F601")
         
         screen_width = self.winfo_screenwidth()
@@ -67,10 +67,10 @@ class MainFrame(ctk.CTkFrame):
         super().__init__(parent)
         self.current_page = None
         
-    def show_page(self, PageClass, **kwargs):
+    def show_page(self, PageClass,):
         if self.current_page:
             self.current_page.destroy()
-        self.current_page = PageClass(self, **kwargs)
+        self.current_page = PageClass(self)
         self.current_page.pack(fill="both", expand=True)
         
 if __name__ == "__main__":

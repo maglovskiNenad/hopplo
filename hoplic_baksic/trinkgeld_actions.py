@@ -4,11 +4,12 @@ import re
 import customtkinter as ctk
 from tabulate import tabulate
 from tkinterdnd2 import DND_FILES, TkinterDnD
+import tkinter as tk
 from tkinter import END
 
 class Trinkgeld_Actions(ctk.CTkFrame):
-    def __init__(self,parent,**kwargs):
-        super().__init__(parent,**kwargs)
+    def __init__(self,parent):
+        super().__init__(parent)
 
         df = self.load_and_clean_csv_data("data/Detailexport.csv") #Reads a CSV file with automatic encoding detection, and cleans the column names.
         data = self.extract_confirmed_work_hours(df)#Extracts and organizes confirmed working hours per person by date.
@@ -24,11 +25,10 @@ class Trinkgeld_Actions(ctk.CTkFrame):
         window_height = int(screen_height * 0.6)
 
         #Drag and Drop
-        label = ctk.CTkLabel(self,text="Drop It like It's hot...",font=ctk.CTkFont(size=16))
-        label.pack(expand=True)
-
-        drop_frame = ctk.CTkFrame(self,width=window_width/2,height=window_height/4,corner_radius=10)
-        drop_frame.pack(pady=60)
+        list_box = tk.Listbox(self,selectmode=tk.SINGLE, background="darkgray")
+        list_box.place(relheight=1,relwidth=0.25)
+      
+      
 
         #https://gist.github.com/RamonWill/f5e9fbc9df2bdceaa176448512e16eea
 
@@ -54,6 +54,9 @@ class Trinkgeld_Actions(ctk.CTkFrame):
         textbox.insert("0.00",formatted_df)
 
     def handle_drop():
+        pass
+    
+    def _display_file():
         pass
     
     def load_and_clean_csv_data(self,filepath,delimiter=";"):
@@ -159,7 +162,7 @@ class Trinkgeld_Actions(ctk.CTkFrame):
             new_list.loc["tips"] = hourly_tips_on_day
 
         new_list = new_list.copy()
-
+ 
         for col in new_list.columns:
             last_value = new_list[col].iloc[-1]
 
