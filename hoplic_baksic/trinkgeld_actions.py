@@ -4,14 +4,13 @@ import re
 import customtkinter as ctk
 from tabulate import tabulate
 from tkinterdnd2 import DND_FILES, TkinterDnD
-import tkinter as tk
-from tkinter import END
 
-class Trinkgeld_Actions(ctk.CTkFrame):
-    def __init__(self,parent):
-        super().__init__(parent)
+class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
+    def __init__(self,parent,*args,**kwargs):
+        super().__init__(parent,*args,**kwargs)
+        self.TkdndVersion = TkinterDnD._require(self)
 
-        df = self.load_and_clean_csv_data("data/Detailexport.csv") #Reads a CSV file with automatic encoding detection, and cleans the column names.
+        df = self.load_and_clean_csv_data("data/Detailexport.csv") #Reads a CSV file with automatic encoding detection,and cleans the column names.
         data = self.extract_confirmed_work_hours(df)#Extracts and organizes confirmed working hours per person by date.
         new_list_perso = self.clean_list_data(data)#Converts a nested dictionary of data into a sorted DataFrame and adds a summary row.
         daily_amount = self.display_and_clean_daily_tip("data/export.csv")#Reads and cleans a daily tip amount from a tab-delimited file.
@@ -25,12 +24,17 @@ class Trinkgeld_Actions(ctk.CTkFrame):
         window_height = int(screen_height * 0.6)
 
         #Drag and Drop
-        list_box = tk.Listbox(self,selectmode=tk.SINGLE, background="darkgray")
-        list_box.place(relheight=1,relwidth=0.25)
-      
-      
 
-        #https://gist.github.com/RamonWill/f5e9fbc9df2bdceaa176448512e16eea
+        label = ctk.CTkLabel(self, text="Drag file here", font=("Arial", 14))
+        label.pack(expand=True)
+
+        drop_frame = ctk.CTkFrame(self,width=int(window_width / 2),height=int(window_height / 4),corner_radius=10)
+        drop_frame.pack(pady=60)
+
+        drop_frame.drop_target_register(DND_FILES)
+        drop_frame.dnd_bind("<<DropEnter>>",self.on_drag_enter)
+        drop_frame.dnd_bind("<<DropLeave>>",self.on_drag_leave)
+        drop_frame.dnd_bind("<<Drop>>",self.display_file_path)
 
         #Text box 
         textbox= ctk.CTkTextbox(self,width=window_width,height=window_height,font=("Courier New", 10),wrap="none")
@@ -53,12 +57,23 @@ class Trinkgeld_Actions(ctk.CTkFrame):
 
         textbox.insert("0.00",formatted_df)
 
-    def handle_drop():
+    def on_drag_enter(self,event):
+        self.configure(fg_color="#a6dcef")
+        return event.action
+
+    def on_drag_leave(self,event):
+        self.configure(fg_color=ctk.ThemeManager.theme["CTkFrame"]["fg_color"])
+        return event.action
+
+    def handle_drop(self):
         pass
-    
-    def _display_file():
-        pass
-    
+
+
+    def display_file_path(self,event):
+        dropped_file = event.data.replace("{","").replace("}","")
+        print(dropped_file)#Putanja za citanje
+
+
     def load_and_clean_csv_data(self,filepath,delimiter=";"):
         with open(filepath,"rb") as f:
             rawdata = f.read(10000)
@@ -70,14 +85,15 @@ class Trinkgeld_Actions(ctk.CTkFrame):
         def clean_colums(col):
             col = col.strip()                  
             col = re.sub(r'\ufeff', '', col)   
-            col = re.sub(r'[^\w]', '', col)    
+            col = re.sub(r'[\W]', '', col)
             col = col.lower()                  
             return col
 
         df.columns =  [clean_colums(c) for c in df.columns]
 
         return df
-    
+
+
     def extract_confirmed_work_hours(self,data):
         df_subset = data[["tag","vorname","typ","dauerbruttodezimal","arbeitsbereich"]] #Taking only four needed rows
         hours_liste = df_subset.values.tolist() #Putting all data in the list
@@ -109,6 +125,7 @@ class Trinkgeld_Actions(ctk.CTkFrame):
 
         return perso
 
+
     def clean_list_data(self,data):
         new_list = pd.DataFrame.from_dict(data,orient="index").fillna(0)
         new_list = new_list.sort_index()
@@ -116,6 +133,7 @@ class Trinkgeld_Actions(ctk.CTkFrame):
         new_list.loc["SUM"] = new_list.sum(numeric_only=True).fillna(0)
 
         return new_list
+
 
     def display_and_clean_daily_tip(self,data):
         with open(data) as tip_amount_list:
@@ -130,6 +148,7 @@ class Trinkgeld_Actions(ctk.CTkFrame):
         daily_tip_amount.columns =  [clean_colums(c) for c in daily_tip_amount.columns]
 
         return daily_tip_amount
+
 
     def get_hourly_tip(self,hour,daily_tip): 
             tips = daily_tip.iloc[0].fillna(0)

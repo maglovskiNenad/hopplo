@@ -1,6 +1,6 @@
 import customtkinter as ctk
 from home_page import HomePage
-from trinkgeld_actions import Trinkgeld_Actions
+from trinkgeld_actions import TrinkgeldActions
 
 #Customtkinter classes
 class App(ctk.CTk):
@@ -33,7 +33,7 @@ class App(ctk.CTk):
         self.sidebar = SidebarFrame(self.sidebar_container, self)
         self.sidebar.grid(row=0, column=0, sticky="ns")
 
-        #main poge design
+        #main Page design
         self.main_content = ctk.CTkFrame(self, corner_radius=10)
         self.main_content.grid(row=0, column=1, sticky="nswe", padx=20, pady=20)
         self.main_content.grid_rowconfigure(0, weight=1)
@@ -50,7 +50,7 @@ class App(ctk.CTk):
         self.main_frame.show_page(HomePage)
     
     def show_trinkgeld_page(self):
-        self.main_frame.show_page(Trinkgeld_Actions)
+        self.main_frame.show_page(TrinkgeldActions)
 
 class SidebarFrame(ctk.CTkFrame):
     def __init__(self, parent, controller):
@@ -67,10 +67,10 @@ class MainFrame(ctk.CTkFrame):
         super().__init__(parent)
         self.current_page = None
         
-    def show_page(self, PageClass,):
+    def show_page(self, page_class):
         if self.current_page:
             self.current_page.destroy()
-        self.current_page = PageClass(self)
+        self.current_page = page_class(self)
         self.current_page.pack(fill="both", expand=True)
         
 if __name__ == "__main__":
