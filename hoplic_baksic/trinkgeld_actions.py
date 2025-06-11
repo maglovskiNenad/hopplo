@@ -10,13 +10,6 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
         super().__init__(parent,*args,**kwargs)
         self.TkdndVersion = TkinterDnD._require(self)
 
-        df = self.load_and_clean_csv_data("data/Detailexport.csv") #Reads a CSV file with automatic encoding detection,and cleans the column names.
-        data = self.extract_confirmed_work_hours(df)#Extracts and organizes confirmed working hours per person by date.
-        new_list_perso = self.clean_list_data(data)#Converts a nested dictionary of data into a sorted DataFrame and adds a summary row.
-        daily_amount = self.display_and_clean_daily_tip("data/export.csv")#Reads and cleans a daily tip amount from a tab-delimited file.
-        hourly_tips = self.get_hourly_tip(new_list_perso,daily_amount)#This script calculates the ratio between daily tips and hourly totals for a specific day.
-        calculation = self.calculation_merging_two_lists(new_list_perso,hourly_tips)#Merges a DataFrame of worked hours with hourly tip values and calculates total earnings per worker
-
         screen_width = self.winfo_screenwidth()
         screen_height = self.winfo_screenheight()
 
@@ -24,7 +17,6 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
         window_height = int(screen_height * 0.6)
 
         #Drag and Drop
-
         label = ctk.CTkLabel(self, text="Drag file here", font=("Arial", 14))
         label.pack(expand=True)
 
@@ -35,27 +27,6 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
         drop_frame.dnd_bind("<<DropEnter>>",self.on_drag_enter)
         drop_frame.dnd_bind("<<DropLeave>>",self.on_drag_leave)
         drop_frame.dnd_bind("<<Drop>>",self.display_file_path)
-
-        #Text box 
-        textbox= ctk.CTkTextbox(self,width=window_width,height=window_height,font=("Courier New", 10),wrap="none")
-        textbox.pack(side="top",fill="both",expand=True)
-
-        #vertical scroll
-        v_scroll = ctk.CTkScrollbar(self,orientation="vertical",command=textbox.yview)
-        v_scroll.pack(side="right",fill="y")
-
-        #horizontal scroll
-        h_scroll = ctk.CTkScrollbar(self,orientation="horizontal",command=textbox.xview)
-        h_scroll.pack(side="bottom",fill="x")
-
-        #connecting them
-        textbox.configure(yscrollcommand=v_scroll.set, xscrollcommand=h_scroll.set)
-
-        c = pd.DataFrame(calculation)
-    
-        formatted_df = tabulate(c, headers='keys', tablefmt='grid',showindex=True) #floatfmt=".2f"
-
-        textbox.insert("0.00",formatted_df)
 
     def on_drag_enter(self,event):
         self.configure(fg_color="#a6dcef")
@@ -68,11 +39,57 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
     def handle_drop(self):
         pass
 
-
     def display_file_path(self,event):
-        dropped_file = event.data.replace("{","").replace("}","")
-        print(dropped_file)#Putanja za citanje
+        screen_width = self.winfo_screenwidth()
+        screen_height = self.winfo_screenheight()
 
+        window_width = int(screen_width * 0.6)
+        window_height = int(screen_height * 0.6)
+
+        dropped_file = event.data.replace("{","").replace("}","")
+        read = pd.read_csv(dropped_file,delimiter=";")
+        l = int(len(read))
+
+        a = False
+        b = False
+#########################################################################
+        if l > 10:
+            a = True
+        elif l < 10:
+            b = True
+        elif a and b:
+            print("bate")
+
+        print(a,b)
+#########################################################################
+        if a and b:
+            # Text box
+            df = self.load_and_clean_csv_data("data/Detailexport.csv")  # Reads a CSV file with automatic encoding detection,and cleans the column names.
+            daily_amount = self.display_and_clean_daily_tip("data/export.csv")  # Reads and cleans a daily tip amount from a tab-delimited file.
+            textbox = ctk.CTkTextbox(self, width=window_width, height=window_height, font=("Courier New", 10),
+                                     wrap="none")
+            textbox.pack(side="top", fill="both", expand=True)
+
+            # vertical scroll
+            v_scroll = ctk.CTkScrollbar(self, orientation="vertical", command=textbox.yview)
+            v_scroll.pack(side="right", fill="y")
+
+            # horizontal scroll
+            h_scroll = ctk.CTkScrollbar(self, orientation="horizontal", command=textbox.xview)
+            h_scroll.pack(side="bottom", fill="x")
+
+            # connecting them
+            textbox.configure(yscrollcommand=v_scroll.set, xscrollcommand=h_scroll.set)
+            data = self.extract_confirmed_work_hours(
+                df)  # Extracts and organizes confirmed working hours per person by date.
+            new_list_perso = self.clean_list_data(
+                data)  # Converts a nested dictionary of data into a sorted DataFrame and adds a summary row.
+            hourly_tips = self.get_hourly_tip(new_list_perso,daily_amount)  # This script calculates the ratio between daily tips and hourly totals for a specific day.
+            calculation = self.calculation_merging_two_lists(new_list_perso,hourly_tips)  # Merges a DataFrame of worked hours with hourly tip values and calculates total earnings per worker
+
+            c = pd.DataFrame(calculation)
+            formatted_df = tabulate(c, headers='keys', tablefmt='grid', showindex=True)  # floatfmt=".2f"
+            textbox.insert("0.00", formatted_df)
 
     def load_and_clean_csv_data(self,filepath,delimiter=";"):
         with open(filepath,"rb") as f:
