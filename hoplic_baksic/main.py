@@ -41,7 +41,7 @@ class App(ctk.CTk):
 
         #main page
         self.main_frame = MainFrame(self.main_content)
-        self.main_frame.grid(row=0, column=0, sticky="ns")
+        self.main_frame.grid(row=0, column=0)
 
         #home page
         self.show_home()

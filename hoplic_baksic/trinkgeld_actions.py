@@ -1,3 +1,5 @@
+from cProfile import label
+
 import pandas as pd
 import chardet
 import re
@@ -9,6 +11,7 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
     def __init__(self,parent,*args,**kwargs):
         super().__init__(parent,*args,**kwargs)
         self.TkdndVersion = TkinterDnD._require(self)
+        self.path_csv_lists = []
 
         screen_width = self.winfo_screenwidth()
         screen_height = self.winfo_screenheight()
@@ -17,11 +20,47 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
         window_height = int(screen_height * 0.6)
 
         #Drag and Drop
+
+        self.file_frame = ctk.CTkScrollableFrame(self, width=int(window_width/4), height=int(window_height/5))
+        self.file_frame.pack(pady=10)
+
         label = ctk.CTkLabel(self, text="Drag file here", font=("Arial", 14))
         label.pack(expand=True)
 
         drop_frame = ctk.CTkFrame(self,width=int(window_width / 2),height=int(window_height / 4),corner_radius=10)
         drop_frame.pack(pady=60)
+
+        # Text box
+        df = self.load_and_clean_csv_data(
+            "data/Detailexport.csv")  # Reads a CSV file with automatic encoding detection,and cleans the column names.
+        daily_amount = self.display_and_clean_daily_tip(
+            "data/export.csv")  # Reads and cleans a daily tip amount from a tab-delimited file.
+        textbox = ctk.CTkTextbox(self, width=window_width, height=window_height, font=("Courier New", 10),
+                                 wrap="none")
+        textbox.pack(side="top", fill="both", expand=True)
+
+        # vertical scroll
+        v_scroll = ctk.CTkScrollbar(self, orientation="vertical", command=textbox.yview)
+        v_scroll.pack(side="right", fill="y")
+
+        # horizontal scroll
+        h_scroll = ctk.CTkScrollbar(self, orientation="horizontal", command=textbox.xview)
+        h_scroll.pack(side="bottom", fill="x")
+
+        # connecting them
+        textbox.configure(yscrollcommand=v_scroll.set, xscrollcommand=h_scroll.set)
+        data = self.extract_confirmed_work_hours(
+            df)  # Extracts and organizes confirmed working hours per person by date.
+        new_list_perso = self.clean_list_data(
+            data)  # Converts a nested dictionary of data into a sorted DataFrame and adds a summary row.
+        hourly_tips = self.get_hourly_tip(new_list_perso,
+                                          daily_amount)  # This script calculates the ratio between daily tips and hourly totals for a specific day.
+        calculation = self.calculation_merging_two_lists(new_list_perso,
+                                                         hourly_tips)  # Merges a DataFrame of worked hours with hourly tip values and calculates total earnings per worker
+
+        c = pd.DataFrame(calculation)
+        formatted_df = tabulate(c, headers='keys', tablefmt='grid', showindex=True)  # floatfmt=".2f"
+        textbox.insert("0.00", formatted_df)
 
         drop_frame.drop_target_register(DND_FILES)
         drop_frame.dnd_bind("<<DropEnter>>",self.on_drag_enter)
@@ -40,56 +79,20 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
         pass
 
     def display_file_path(self,event):
-        screen_width = self.winfo_screenwidth()
-        screen_height = self.winfo_screenheight()
-
-        window_width = int(screen_width * 0.6)
-        window_height = int(screen_height * 0.6)
-
         dropped_file = event.data.replace("{","").replace("}","")
-        read = pd.read_csv(dropped_file,delimiter=";")
-        l = int(len(read))
+        #read = pd.read_csv(dropped_file,delimiter=";")
+        #l = int(len(read))
 
-        a = False
-        b = False
-#########################################################################
-        if l > 10:
-            a = True
-        elif l < 10:
-            b = True
-        elif a and b:
-            print("bate")
 
-        print(a,b)
-#########################################################################
-        if a and b:
-            # Text box
-            df = self.load_and_clean_csv_data("data/Detailexport.csv")  # Reads a CSV file with automatic encoding detection,and cleans the column names.
-            daily_amount = self.display_and_clean_daily_tip("data/export.csv")  # Reads and cleans a daily tip amount from a tab-delimited file.
-            textbox = ctk.CTkTextbox(self, width=window_width, height=window_height, font=("Courier New", 10),
-                                     wrap="none")
-            textbox.pack(side="top", fill="both", expand=True)
+        if dropped_file:
+            self.path_csv_lists.append(dropped_file)
 
-            # vertical scroll
-            v_scroll = ctk.CTkScrollbar(self, orientation="vertical", command=textbox.yview)
-            v_scroll.pack(side="right", fill="y")
+        for path in self.path_csv_lists:
+            ctk.CTkLabel(self.file_frame, text=f"{path}", anchor="w").pack(fill="x", padx=10, pady=1)
 
-            # horizontal scroll
-            h_scroll = ctk.CTkScrollbar(self, orientation="horizontal", command=textbox.xview)
-            h_scroll.pack(side="bottom", fill="x")
+        new_list = list(dict.fromkeys(self.path_csv_lists))
 
-            # connecting them
-            textbox.configure(yscrollcommand=v_scroll.set, xscrollcommand=h_scroll.set)
-            data = self.extract_confirmed_work_hours(
-                df)  # Extracts and organizes confirmed working hours per person by date.
-            new_list_perso = self.clean_list_data(
-                data)  # Converts a nested dictionary of data into a sorted DataFrame and adds a summary row.
-            hourly_tips = self.get_hourly_tip(new_list_perso,daily_amount)  # This script calculates the ratio between daily tips and hourly totals for a specific day.
-            calculation = self.calculation_merging_two_lists(new_list_perso,hourly_tips)  # Merges a DataFrame of worked hours with hourly tip values and calculates total earnings per worker
-
-            c = pd.DataFrame(calculation)
-            formatted_df = tabulate(c, headers='keys', tablefmt='grid', showindex=True)  # floatfmt=".2f"
-            textbox.insert("0.00", formatted_df)
+        return new_list#Duplikati se pojavljuju
 
     def load_and_clean_csv_data(self,filepath,delimiter=";"):
         with open(filepath,"rb") as f:
