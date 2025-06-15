@@ -20,9 +20,8 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
         window_height = int(screen_height * 0.6)
 
         #Drag and Drop
-
         self.file_frame = ctk.CTkScrollableFrame(self, width=int(window_width/4), height=int(window_height/5))
-        self.file_frame.pack(pady=10)
+        self.file_frame.pack(side="left",fill="both",expand=True)
 
         label = ctk.CTkLabel(self, text="Drag file here", font=("Arial", 14))
         label.pack(expand=True)
@@ -87,12 +86,17 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
         if dropped_file:
             self.path_csv_lists.append(dropped_file)
 
-        for path in self.path_csv_lists:
+        new_list = list(dict.fromkeys(self.path_csv_lists))
+
+        for widget in self.file_frame.winfo_children():
+            widget.destroy()
+
+        for path in new_list:
             ctk.CTkLabel(self.file_frame, text=f"{path}", anchor="w").pack(fill="x", padx=10, pady=1)
 
         new_list = list(dict.fromkeys(self.path_csv_lists))
 
-        return new_list#Duplikati se pojavljuju
+        return new_list
 
     def load_and_clean_csv_data(self,filepath,delimiter=";"):
         with open(filepath,"rb") as f:
