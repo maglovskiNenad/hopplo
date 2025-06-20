@@ -18,15 +18,20 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
         window_width = int(screen_width * 0.6)
         window_height = int(screen_height * 0.6)
 
-        #Drag and Drop
-        self.file_frame = ctk.CTkScrollableFrame(self, width=int(window_width/4), height=int(window_height/5))
-        self.file_frame.pack(side="left",padx=20,fill="both",expand=True)
+        main_frame = ctk.CTkFrame(self,corner_radius=0,fg_color="#2e2e2e")
+        main_frame.pack(fill="both", expand=True)
 
-        label = ctk.CTkLabel(self, text="Drag file here", font=("Arial", 14))
-        label.pack(expand=True)
+        self.file_frame = ctk.CTkScrollableFrame(main_frame, width=int(window_width / 5), height=int(window_height / 9),border_width=1,border_color="gray")
+        self.file_frame.pack(side="left",padx=(20,0),pady=20,anchor="n")
 
-        drop_frame = ctk.CTkFrame(self,width=int(window_width / 2),height=int(window_height / 4),corner_radius=10)
-        drop_frame.pack(pady=60)
+        right_frame = ctk.CTkFrame(main_frame,fg_color="#2e2e2e")
+        right_frame.pack(side="left", fill="both", expand=True)
+
+        drop_frame = ctk.CTkFrame(right_frame, width=int(window_width / 2), height=int(window_height / 4),border_width=1,border_color="white",fg_color="#2e2e2e")
+        drop_frame.pack(padx=10, pady=20, anchor="n")
+
+        label = ctk.CTkLabel(drop_frame, text="Drop file here", font=("Arial", 14), text_color="white")
+        label.place(relx=0.5, rely=0.5, anchor="center")
 
         drop_frame.drop_target_register(DND_FILES)
         drop_frame.dnd_bind("<<DropEnter>>",self.on_drag_enter)
@@ -65,9 +70,10 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
 
             window_width = int(screen_width * 0.6)
             window_height = int(screen_height * 0.6)
-            textbox = ctk.CTkTextbox(self, width=window_width, height=window_height, font=("Courier New", 10),
-                                             wrap="none")
-            textbox.pack(side="top", fill="both", expand=True)
+
+            textbox = ctk.CTkTextbox(self, width=int(window_width), height=int(window_height),
+                                     font=("Courier New", 10), wrap="none")
+            textbox.pack(fill="both", expand=True, padx=10, pady=10)
 
             # vertical scroll
             v_scroll = ctk.CTkScrollbar(self, orientation="vertical", command=textbox.yview)
@@ -96,7 +102,7 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
             widget.destroy()
 
         for path in new_list:
-            ctk.CTkLabel(self.file_frame, text=f"{path}", anchor="w").pack(fill="x", padx=10, pady=1)
+            ctk.CTkLabel(self.file_frame, text=f"{path}", anchor="w").pack(fill="x",padx=10, pady=1)
 
         new_list = list(dict.fromkeys(self.path_csv_lists))
 
