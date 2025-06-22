@@ -5,6 +5,7 @@ import customtkinter as ctk
 from tabulate import tabulate
 from tkinterdnd2 import DND_FILES, TkinterDnD
 from warning_msg import WarningPopup
+from config import WINDOW_WIDTH,WINDOW_HEIGHT
 
 class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
     def __init__(self,parent,*args,**kwargs):
@@ -12,22 +13,16 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
         self.TkdndVersion = TkinterDnD._require(self)
         self.path_csv_lists = []
 
-        screen_width = self.winfo_screenwidth()
-        screen_height = self.winfo_screenheight()
-
-        window_width = int(screen_width * 0.6)
-        window_height = int(screen_height * 0.6)
-
         main_frame = ctk.CTkFrame(self,corner_radius=0,fg_color="#2e2e2e")
         main_frame.pack(fill="both", expand=True)
 
-        self.file_frame = ctk.CTkScrollableFrame(main_frame, width=int(window_width / 5), height=int(window_height / 9),border_width=1,border_color="gray")
+        self.file_frame = ctk.CTkScrollableFrame(main_frame, width=int(WINDOW_WIDTH / 5), height=int(WINDOW_HEIGHT / 9),border_width=1,border_color="gray")
         self.file_frame.pack(side="left",padx=(20,0),pady=20,anchor="n")
 
         right_frame = ctk.CTkFrame(main_frame,fg_color="#2e2e2e")
         right_frame.pack(side="left", fill="both", expand=True)
 
-        drop_frame = ctk.CTkFrame(right_frame, width=int(window_width / 2), height=int(window_height / 4),border_width=1,border_color="white",fg_color="#2e2e2e")
+        drop_frame = ctk.CTkFrame(right_frame, width=int(WINDOW_WIDTH / 2), height=int(WINDOW_HEIGHT / 4),border_width=1,border_color="white",fg_color="#2e2e2e")
         drop_frame.pack(padx=10, pady=20, anchor="n")
 
         label = ctk.CTkLabel(drop_frame, text="Drop file here", font=("Arial", 14), text_color="white")
@@ -64,16 +59,9 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
             hourly_tips = self.get_hourly_tip(new_list_perso, daily_amount)
             calculation = self.calculation_merging_two_lists(new_list_perso, hourly_tips)
 
-            # Text box
-            screen_width = self.winfo_screenwidth()
-            screen_height = self.winfo_screenheight()
-
-            window_width = int(screen_width * 0.6)
-            window_height = int(screen_height * 0.6)
-
-            textbox = ctk.CTkTextbox(self, width=int(window_width), height=int(window_height),
+            textbox = ctk.CTkTextbox(self, width=int(WINDOW_WIDTH), height=int(WINDOW_HEIGHT),
                                      font=("Courier New", 10), wrap="none")
-            textbox.pack(fill="both", expand=True, padx=10, pady=10)
+            textbox.pack(fill="both", expand=True, padx=15, pady=15)
 
             # vertical scroll
             v_scroll = ctk.CTkScrollbar(self, orientation="vertical", command=textbox.yview)
@@ -88,7 +76,6 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
             c = pd.DataFrame(calculation)
             formatted_df = tabulate(c, headers='keys', tablefmt='grid', showindex=True)  # floatfmt=".2f"
             textbox.insert("0.00", formatted_df)
-
 
     def display_file_path(self,event):
         dropped_file = event.data.replace("{","").replace("}","")
@@ -129,10 +116,9 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
 
         return df
 
-
     def extract_confirmed_work_hours(self,data):
-        df_subset = data[["tag","vorname","typ","dauerbruttodezimal","arbeitsbereich"]] #Taking only four needed rows
-        hours_liste = df_subset.values.tolist() #Putting all data in the list
+        df_subset = data[["tag","vorname","typ","dauerbruttodezimal","arbeitsbereich"]]
+        hours_liste = df_subset.values.tolist()
 
         perso = {}
 

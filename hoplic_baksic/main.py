@@ -1,23 +1,17 @@
 import customtkinter as ctk
 from home_page import HomePage
 from trinkgeld_actions import TrinkgeldActions
+from config import WINDOW_WIDTH,WINDOW_HEIGHT,SCREEN_WIDTH,SCREEN_HEIGHT
 
-#Customtkinter classes
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
         self.title("\U0001F601")
-        
-        screen_width = self.winfo_screenwidth()
-        screen_height = self.winfo_screenheight()
 
-        window_width = int(screen_width * 0.6)
-        window_height = int(screen_height * 0.6)
+        x = int((SCREEN_WIDTH - WINDOW_WIDTH) / 2)
+        y = int((SCREEN_HEIGHT - WINDOW_HEIGHT) / 2)
 
-        x = int((screen_width - window_width) / 2)
-        y = int((screen_height - window_height) / 2)
-
-        self.geometry(f"{window_width}x{window_height}+{x}+{y}")
+        self.geometry(f"{WINDOW_WIDTH}x{WINDOW_HEIGHT}+{x}+{y}")
 
         #sidebar controller
         self.grid_columnconfigure(1, weight=1)
@@ -60,7 +54,7 @@ class SidebarFrame(ctk.CTkFrame):
         #sidebar
         ctk.CTkLabel(self, text="App", font=ctk.CTkFont(size=16, weight="bold")).pack(pady=10)
         ctk.CTkButton(self, text="Home", command=controller.show_home).pack(pady=5, padx=5)
-        ctk.CTkButton(self,text="Trinkgeld",command=controller.show_trinkgeld_page).pack(pady=5, padx=5)
+        ctk.CTkButton(self,text="Trinkgeld", command=controller.show_trinkgeld_page).pack(pady=5, padx=5)
 
 class MainFrame(ctk.CTkFrame):
     def __init__(self, parent):
