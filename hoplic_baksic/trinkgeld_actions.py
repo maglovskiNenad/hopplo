@@ -6,6 +6,8 @@ from tabulate import tabulate
 from tkinterdnd2 import DND_FILES, TkinterDnD
 from warning_msg import WarningPopup
 from config import WINDOW_WIDTH,WINDOW_HEIGHT
+import pyautogui
+from tkinter import filedialog
 
 class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
     def __init__(self,parent,*args,**kwargs):
@@ -28,10 +30,41 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
         label = ctk.CTkLabel(drop_frame, text="Drop file here", font=("Arial", 14), text_color="white")
         label.place(relx=0.5, rely=0.5, anchor="center")
 
+        self.textbox = ctk.CTkTextbox(self, width=int(WINDOW_WIDTH), height=int(WINDOW_HEIGHT),
+                                 font=("Courier New", 10), wrap="none")
+
+        ctk.CTkButton(main_frame, text="Delete list" , command=self.clear_file_list).pack(pady=20, padx=20)
+        ctk.CTkButton(main_frame, text="Screenshoot", command=self.screenshot_widget).pack(pady=0, padx=0)
+
         drop_frame.drop_target_register(DND_FILES)
         drop_frame.dnd_bind("<<DropEnter>>",self.on_drag_enter)
         drop_frame.dnd_bind("<<DropLeave>>",self.on_drag_leave)
         drop_frame.dnd_bind("<<Drop>>",self.display_file_path)
+
+    def screenshot_widget(self):
+        self.update_idletasks()
+
+        x = self.textbox.winfo_rootx()
+        y = self.textbox.winfo_rooty()
+
+        width = self.textbox.winfo_width()
+        height = self.textbox.winfo_height()
+
+        screenshoot = pyautogui.screenshot(region=(x,y,width,height))
+        path = filedialog.asksaveasfilename(
+            defaultextension=".png",
+            filetypes=[("PNG file","*.png")],
+            title="save screenshot",
+        )
+
+        if path:
+            screenshoot.save(path)
+
+    def clear_file_list(self):
+        self.path_csv_lists.clear()
+
+        for widget in self.file_frame.winfo_children():
+            widget.destroy()
 
     def on_drag_enter(self,event):
         self.configure(fg_color="#a6dcef")
@@ -59,34 +92,30 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
             hourly_tips = self.get_hourly_tip(new_list_perso, daily_amount)
             calculation = self.calculation_merging_two_lists(new_list_perso, hourly_tips)
 
-            textbox = ctk.CTkTextbox(self, width=int(WINDOW_WIDTH), height=int(WINDOW_HEIGHT),
-                                     font=("Courier New", 10), wrap="none")
-            textbox.pack(fill="both", expand=True, padx=15, pady=15)
+            self.textbox.pack(fill="both", expand=True, padx=15, pady=15)
 
             # vertical scroll
-            v_scroll = ctk.CTkScrollbar(self, orientation="vertical", command=textbox.yview)
+            v_scroll = ctk.CTkScrollbar(self, orientation="vertical", command=self.textbox.yview)
             v_scroll.pack(side="right", fill="y")
 
             # horizontal scroll
-            h_scroll = ctk.CTkScrollbar(self, orientation="horizontal", command=textbox.xview)
+            h_scroll = ctk.CTkScrollbar(self, orientation="horizontal", command=self.textbox.xview)
             h_scroll.pack(side="bottom", fill="x")
 
-            v_scroll.configure(command=textbox.yview)
-            h_scroll.configure(command=textbox.xview)
-
-            #textbox.configure(yscrollcommand=v_scroll.set, xscrollcommand=h_scroll.set)
+            v_scroll.configure(command= self.textbox.yview) #textbox.configure(yscrollcommand=v_scroll.set, xscrollcommand=h_scroll.set)
+            h_scroll.configure(command= self.textbox.xview)
 
             # connecting them
             c = pd.DataFrame(calculation)
             formatted_df = tabulate(c, headers='keys', tablefmt='grid', showindex=True)  # floatfmt=".2f"
-            textbox.insert("0.00", formatted_df)
+            self.textbox.insert("0.00", formatted_df)
 
             # Test panel for the "trinkgeld Tabelle"
             test_panel = pd.DataFrame(daily_amount)
             first_col_test_panel = test_panel.iloc[:, 1]
             formated_first_col_test_panel = pd.DataFrame({"TEST": first_col_test_panel})
             formated_test_panel = tabulate(formated_first_col_test_panel,headers='keys', tablefmt='grid',showindex=False)
-            textbox.insert("0.00",formated_test_panel)
+            self.textbox.insert("0.00",formated_test_panel)
 
     def display_file_path(self,event):
         dropped_file = event.data.replace("{","").replace("}","")
@@ -105,10 +134,8 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
         new_list = list(dict.fromkeys(self.path_csv_lists))
 
         self.handle_drop(new_list)
-        return new_list
 
-    def clear_file_list(self):
-        pass
+        return new_list
 
     def load_and_clean_csv_data(self,filepath,delimiter=";"):
         with open(filepath,"rb") as f:

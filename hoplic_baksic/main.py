@@ -51,6 +51,7 @@ class SidebarFrame(ctk.CTkFrame):
         super().__init__(parent, width=200)
         self.grid_rowconfigure(4, weight=1)
 
+        self.actions = TrinkgeldActions(self)
         #sidebar
         ctk.CTkLabel(self, text="App", font=ctk.CTkFont(size=16, weight="bold")).pack(pady=10)
         ctk.CTkButton(self, text="Home", command=controller.show_home).pack(pady=5, padx=5)
