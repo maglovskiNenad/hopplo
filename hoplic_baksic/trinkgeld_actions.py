@@ -70,12 +70,23 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
             # horizontal scroll
             h_scroll = ctk.CTkScrollbar(self, orientation="horizontal", command=textbox.xview)
             h_scroll.pack(side="bottom", fill="x")
-            textbox.configure(yscrollcommand=v_scroll.set, xscrollcommand=h_scroll.set)
+
+            v_scroll.configure(command=textbox.yview)
+            h_scroll.configure(command=textbox.xview)
+
+            #textbox.configure(yscrollcommand=v_scroll.set, xscrollcommand=h_scroll.set)
 
             # connecting them
             c = pd.DataFrame(calculation)
             formatted_df = tabulate(c, headers='keys', tablefmt='grid', showindex=True)  # floatfmt=".2f"
             textbox.insert("0.00", formatted_df)
+
+            # Test panel for the "trinkgeld Tabelle"
+            test_panel = pd.DataFrame(daily_amount)
+            first_col_test_panel = test_panel.iloc[:, 1]
+            formated_first_col_test_panel = pd.DataFrame({"TEST": first_col_test_panel})
+            formated_test_panel = tabulate(formated_first_col_test_panel,headers='keys', tablefmt='grid',showindex=False)
+            textbox.insert("0.00",formated_test_panel)
 
     def display_file_path(self,event):
         dropped_file = event.data.replace("{","").replace("}","")
@@ -96,6 +107,8 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
         self.handle_drop(new_list)
         return new_list
 
+    def clear_file_list(self):
+        pass
 
     def load_and_clean_csv_data(self,filepath,delimiter=";"):
         with open(filepath,"rb") as f:
