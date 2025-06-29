@@ -4,6 +4,8 @@ from trinkgeld_actions import TrinkgeldActions
 from home_page import HomePage
 from warning_msg import WarningPopup
 from  main import App,SidebarFrame,MainFrame
+import os
+import tempfile
 
 
 @pytest.fixture
@@ -34,3 +36,30 @@ def test_extract_confirmed_work_hours(trinkgeld_obj):
     }
 
     assert result == expected
+
+def text_load_and_clean_csv_data(trinkgeld_obj):
+    content = "  \ufeffVORNAME ; DAUERBRUTTO_DEZIMAL \nAna;4,5\nMarko;3"
+
+    with tempfile.NamedTemporaryFile("w+",delete=False,suffix=".csv",encoding="utf-8")as tmpfile:
+        tmpfile.write(content)
+        tmpfile_path =(tmpfile.name)
+
+    df = trinkgeld_obj.load_and_clean_csv_data(tmpfile_path,delimiter=";")
+
+    os.remove(tmpfile_path)
+
+    expected_columns = ["vorname","dauerbruttodezimal"]
+
+    assert list(df.columns) == expected_columns
+    assert df.shape == (2,2)
+    assert df.iloc[0,0] == "Ana"
+    assert df.iloc[1,1] == "3"
+
+
+# TODO clean_list_data
+
+# TODO display_and_clean_daily_tip
+
+# TODO get_hourly_tip
+
+# TODO calculation_merging_two_lists

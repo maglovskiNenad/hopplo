@@ -187,7 +187,6 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
 
         return perso
 
-
     def clean_list_data(self,data):
         new_list = pd.DataFrame.from_dict(data,orient="index").fillna(0)
         new_list = new_list.sort_index()
