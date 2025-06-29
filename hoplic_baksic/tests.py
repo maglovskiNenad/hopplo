@@ -55,11 +55,26 @@ def text_load_and_clean_csv_data(trinkgeld_obj):
     assert df.iloc[0,0] == "Ana"
     assert df.iloc[1,1] == "3"
 
+def test_clean_list_data(trinkgeld_obj):
+    pass
 
-# TODO clean_list_data
+def test_display_and_clean_daily_tip(trinkgeld_obj):
+    pass
 
-# TODO display_and_clean_daily_tip
+def test_get_hourly_tip(trinkgeld_obj):
+    pass
 
-# TODO get_hourly_tip
+def test_calculation_merging_two_lists(trinkgeld_obj):
+    pass
 
-# TODO calculation_merging_two_lists
+def test_calculation_merging_two_lists(trinkgeld_obj):
+    pass
+
+def test_display_file_path(trinkgeld_obj):
+    pass
+
+def test_handle_drop(trinkgeld_obj):
+    pass
+
+def test_screenshot_widget(trinkgeld_obj):
+    pass
