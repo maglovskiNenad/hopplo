@@ -7,9 +7,12 @@ import customtkinter as ctk
 from warning_msg import WarningPopup
 
 GITHUB_REPO = "maglovskiNenad/hopplo"
-LOCALE_VERSION_FILE = "version.py"
+LOCALE_VERSION_FILE = "version.txt"
 
 # TODO potraziti lokalnu verziju
+def get_local_version():
+    with open(LOCALE_VERSION_FILE,"r")as f:
+        return  f.read().strip()
 
 # TODO potraziti poslednju verziju
 

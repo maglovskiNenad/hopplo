@@ -113,7 +113,7 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
             # Test panel for the "trinkgeld Tabelle"
             test_panel = pd.DataFrame(daily_amount)
             first_col_test_panel = test_panel.iloc[:, 1]
-            formated_first_col_test_panel = pd.DataFrame({"TEST": first_col_test_panel})
+            formated_first_col_test_panel = pd.DataFrame({"TESTED TIPs": first_col_test_panel})
             formated_test_panel = tabulate(formated_first_col_test_panel,headers='keys', tablefmt='grid',showindex=False)
             self.textbox.insert("0.00",formated_test_panel)
 
