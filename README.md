@@ -1,16 +1,11 @@
-Kako koristiti ovaj projekat:
+How to use this project:
 
-1. Aktiviraj virtualno okruženje (/hopplo/hoplic_baksic):
-   python3 -m venv venv && source venv/bin/activate
+Activate the virtual environment (/hopplo/hoplic_baksic): python3 -m venv venv && source venv/bin/activate
 
-2. Instaliraj py2app:
-   pip install py2app
+Install py2app: pip install py2app
 
-3. Napravi .app:
-   python setup.py py2app
+Create .app: python setup.py py2app
 
-4. Instaliraj create-dmg (ako već nisi):
-   npm install -g create-dmg
+Install create-dmg (if you haven't already): npm install -g create-dmg
 
-5. Napravi .dmg fajl:
-   ./create_dmg.sh
+Create a .dmg file: ./create_dmg.sh
