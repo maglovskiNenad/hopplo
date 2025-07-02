@@ -1,13 +1,20 @@
 # ===============================================================
-# CSV reader
-# Copyright (c) 2025 Maglovski Nenad
-# This source code is licensed under the MIT
-# license found in the LICENSE file.
+#  Application Name: CSV reader
+#  Author: Maglovski Nenad
+#  Copyright (c) 2025 Maglovski Nenad. All rights reserved.
+#  Contact: maglovskin@gmail.com
+#
+#  This code is protected by copyright law. Any unauthorized
+#  copying, distribution, or modification without the author's
+#  permission is strictly prohibited.
+
+#  This source code is licensed under the MIT
+#  license found in the LICENSE file.
 # ===============================================================
 
 MIT License
 
-Copyright (c) 2025 maglovskiNenad
+Copyright (c) 2025 Maglovski Nenad
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

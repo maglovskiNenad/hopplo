@@ -5,27 +5,16 @@
 # license found in the LICENSE file.
 # ===============================================================
 
-import pandas as pd
 import customtkinter as ctk
+from config import WINDOW_WIDTH,WINDOW_HEIGHT,title_font,section_font,text_font
 
 
 class HomePage(ctk.CTkFrame):
     def __init__(self, parent):
         super().__init__(parent)
-        screen_width = self.winfo_screenwidth()
-        screen_height = self.winfo_screenheight()
-
-        window_width = int(screen_width * 0.6)
-        window_height = int(screen_height * 0.6)
-
         # Scrollable frame container
-        scrollable_frame = ctk.CTkScrollableFrame(self, width=window_width, height=window_height)
+        scrollable_frame = ctk.CTkScrollableFrame(self, width=WINDOW_WIDTH, height=WINDOW_HEIGHT)
         scrollable_frame.pack(padx=10, pady=10, fill="both", expand=True)
-
-        # Fonts
-        title_font = ctk.CTkFont(size=20, weight="bold")
-        section_font = ctk.CTkFont(size=14, weight="bold")
-        text_font = ctk.CTkFont(size=12)
 
         # Title
         ctk.CTkLabel(
@@ -41,7 +30,7 @@ class HomePage(ctk.CTkFrame):
             scrollable_frame,
             text="This application helps you streamline the calculation of employee tips based on actual working hours.",
             font=text_font,
-            wraplength=window_width - 40,
+            wraplength=WINDOW_WIDTH - 40,
             justify="left"
         ).pack(anchor="w", padx=20, pady=(5, 15))
 
@@ -59,7 +48,7 @@ class HomePage(ctk.CTkFrame):
             "✅ Presents the final results in a clean, formatted table inside the app.",
         ]
         for line in features:
-            ctk.CTkLabel(scrollable_frame, text=line, font=text_font, wraplength=window_width - 60).pack(anchor="w",
+            ctk.CTkLabel(scrollable_frame, text=line, font=text_font, wraplength=WINDOW_WIDTH - 60).pack(anchor="w",
                                                                                                          padx=40,
                                                                                                          pady=2)
 
@@ -77,7 +66,7 @@ class HomePage(ctk.CTkFrame):
             "7. The results are displayed in a scrollable table with totals per person and per day.",
         ]
         for step in steps:
-            ctk.CTkLabel(scrollable_frame, text=step, font=text_font, wraplength=window_width - 60).pack(anchor="w",
+            ctk.CTkLabel(scrollable_frame, text=step, font=text_font, wraplength=WINDOW_WIDTH - 60).pack(anchor="w",
                                                                                                          padx=40,
                                                                                                          pady=2)
 
@@ -110,5 +99,5 @@ class HomePage(ctk.CTkFrame):
             scrollable_frame,
             text="\n💡 Ready to get started? Use the sidebar and head over to the 'Trinkgeld' section to begin your calculations!",
             font=section_font,
-            wraplength=window_width - 40
+            wraplength=WINDOW_WIDTH - 40
         ).pack(anchor="w", padx=20, pady=(30, 20))

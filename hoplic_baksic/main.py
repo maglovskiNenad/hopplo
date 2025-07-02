@@ -13,9 +13,9 @@
 # ===============================================================
 
 import customtkinter as ctk
-import tkinter as tk
 from home_page import HomePage
 from trinkgeld_actions import TrinkgeldActions
+from settings import SettingsActions
 from config import WINDOW_WIDTH,WINDOW_HEIGHT,SCREEN_WIDTH,SCREEN_HEIGHT
 
 class App(ctk.CTk):
@@ -61,16 +61,21 @@ class App(ctk.CTk):
     def show_trinkgeld_page(self):
         self.main_frame.show_page(TrinkgeldActions)
 
+    def show_settings_page(self):
+        self.main_frame.show_page(SettingsActions)
+
 class SidebarFrame(ctk.CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent, width=200)
         self.grid_rowconfigure(4, weight=1)
 
         self.actions = TrinkgeldActions(self)
+
         #sidebar
         ctk.CTkLabel(self, text="App", font=ctk.CTkFont(size=16, weight="bold")).pack(pady=10)
         ctk.CTkButton(self, text="Home", command=controller.show_home,fg_color="transparent").pack(pady=5, padx=5)
         ctk.CTkButton(self,text="Trinkgeld", command=controller.show_trinkgeld_page,fg_color="transparent").pack(pady=5, padx=5)
+        ctk.CTkButton(self,text="Settings",command=controller.show_settings_page,fg_color="transparent").pack(pady=5, padx=5)
 
 class MainFrame(ctk.CTkFrame):
     def __init__(self, parent):

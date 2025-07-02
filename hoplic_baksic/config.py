@@ -19,3 +19,7 @@ SCREEN_HEIGHT = root.winfo_screenheight()
 WINDOW_WIDTH = int(SCREEN_WIDTH * 0.6)
 WINDOW_HEIGHT = int(SCREEN_HEIGHT * 0.6)
 
+# Fonts
+title_font = ctk.CTkFont(size=20, weight="bold")
+section_font = ctk.CTkFont(size=14, weight="bold")
+text_font = ctk.CTkFont(size=12)
