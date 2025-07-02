@@ -76,9 +76,9 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
 
     def handle_drop(self,new_list):
         if len(new_list) < 2:
-            WarningPopup(self,message="Need more file...")
+            WarningPopup(self,message="You just inserted the given file, I need two for proper functioning.")
         elif len(new_list) > 2:
-            WarningPopup(self, message="We have more files then we need.")
+            WarningPopup(self, message="The wrong file size was sent to me, I can't process the data properly.")
         elif len(new_list) == 2:
             for data_in_list in new_list:
                 read_data = pd.read_csv(data_in_list,delimiter=";")
@@ -87,35 +87,41 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
                 elif len(read_data) == 2:
                     daily_amount = self.display_and_clean_daily_tip(data_in_list)
 
-            data = self.extract_confirmed_work_hours(df)
-            new_list_perso = self.clean_list_data(data)
-            hourly_tips = self.get_hourly_tip(new_list_perso, daily_amount)
-            calculation = self.calculation_merging_two_lists(new_list_perso, hourly_tips)
+            try:
+                 data = self.extract_confirmed_work_hours(df)
+                 new_list_perso = self.clean_list_data(data)
+                 hourly_tips = self.get_hourly_tip(new_list_perso, daily_amount)
+                 calculation = self.calculation_merging_two_lists(new_list_perso, hourly_tips)
 
-            self.textbox.pack(fill="both", expand=True, padx=15, pady=15)
+                 self.textbox.pack(fill="both", expand=True, padx=15, pady=15)
 
-            # vertical scroll
-            v_scroll = ctk.CTkScrollbar(self, orientation="vertical", command=self.textbox.yview)
-            v_scroll.pack(side="right", fill="y")
+                 # vertical scroll
+                 v_scroll = ctk.CTkScrollbar(self, orientation="vertical", command=self.textbox.yview)
+                 v_scroll.pack(side="right", fill="y")
 
-            # horizontal scroll
-            h_scroll = ctk.CTkScrollbar(self, orientation="horizontal", command=self.textbox.xview)
-            h_scroll.pack(side="bottom", fill="x")
+                 # horizontal scroll
+                 h_scroll = ctk.CTkScrollbar(self, orientation="horizontal", command=self.textbox.xview)
+                 h_scroll.pack(side="bottom", fill="x")
 
-            v_scroll.configure(command= self.textbox.yview) #textbox.configure(yscrollcommand=v_scroll.set, xscrollcommand=h_scroll.set)
-            h_scroll.configure(command= self.textbox.xview)
+                 v_scroll.configure(
+                     command=self.textbox.yview)  # textbox.configure(yscrollcommand=v_scroll.set, xscrollcommand=h_scroll.set)
+                 h_scroll.configure(command=self.textbox.xview)
 
-            # connecting them
-            c = pd.DataFrame(calculation)
-            formatted_df = tabulate(c, headers='keys', tablefmt='grid', showindex=True)  # floatfmt=".2f"
-            self.textbox.insert("0.00", formatted_df)
+                 # connecting them
+                 c = pd.DataFrame(calculation)
+                 formatted_df = tabulate(c, headers='keys', tablefmt='grid', showindex=True)  # floatfmt=".2f"
+                 self.textbox.insert("0.00", formatted_df)
 
-            # Test panel for the "trinkgeld Tabelle"
-            test_panel = pd.DataFrame(daily_amount)
-            first_col_test_panel = test_panel.iloc[:, 1]
-            formated_first_col_test_panel = pd.DataFrame({"TESTED TIPs": first_col_test_panel})
-            formated_test_panel = tabulate(formated_first_col_test_panel,headers='keys', tablefmt='grid',showindex=False)
-            self.textbox.insert("0.00",formated_test_panel)
+                 # Test panel for the "trinkgeld Tabelle"
+                 test_panel = pd.DataFrame(daily_amount)
+                 first_col_test_panel = test_panel.iloc[:, 1]
+                 formated_first_col_test_panel = pd.DataFrame({"TESTED TIPs": first_col_test_panel})
+                 formated_test_panel = tabulate(formated_first_col_test_panel, headers='keys', tablefmt='grid',
+                                                showindex=False)
+                 self.textbox.insert("0.00", formated_test_panel)
+            except KeyError:
+                WarningPopup(self,message="The wrong file was inserted, please try to use the necessary documentation.")
+
 
     def display_file_path(self,event):
         dropped_file = event.data.replace("{","").replace("}","")
@@ -126,6 +132,7 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
         new_list = list(dict.fromkeys(self.path_csv_lists))
 
         for widget in self.file_frame.winfo_children():
+
             widget.destroy()
 
         for path in new_list:
