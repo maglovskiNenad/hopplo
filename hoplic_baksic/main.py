@@ -1,4 +1,19 @@
+# ===============================================================
+#  Application Name: CSV reader
+#  Author: Maglovski Nenad
+#  Copyright (c) 2025 Maglovski Nenad. All rights reserved.
+#  Contact: maglovskin@gmail.com
+#
+#  This code is protected by copyright law. Any unauthorized
+#  copying, distribution, or modification without the author's
+#  permission is strictly prohibited.
+
+#  This source code is licensed under the MIT
+#  license found in the LICENSE file.
+# ===============================================================
+
 import customtkinter as ctk
+import tkinter as tk
 from home_page import HomePage
 from trinkgeld_actions import TrinkgeldActions
 from config import WINDOW_WIDTH,WINDOW_HEIGHT,SCREEN_WIDTH,SCREEN_HEIGHT
@@ -54,8 +69,8 @@ class SidebarFrame(ctk.CTkFrame):
         self.actions = TrinkgeldActions(self)
         #sidebar
         ctk.CTkLabel(self, text="App", font=ctk.CTkFont(size=16, weight="bold")).pack(pady=10)
-        ctk.CTkButton(self, text="Home", command=controller.show_home).pack(pady=5, padx=5)
-        ctk.CTkButton(self,text="Trinkgeld", command=controller.show_trinkgeld_page).pack(pady=5, padx=5)
+        ctk.CTkButton(self, text="Home", command=controller.show_home,fg_color="transparent").pack(pady=5, padx=5)
+        ctk.CTkButton(self,text="Trinkgeld", command=controller.show_trinkgeld_page,fg_color="transparent").pack(pady=5, padx=5)
 
 class MainFrame(ctk.CTkFrame):
     def __init__(self, parent):
