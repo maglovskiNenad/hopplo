@@ -18,6 +18,7 @@ from trinkgeld_actions import TrinkgeldActions
 from settings import SettingsActions
 from config import WINDOW_WIDTH,WINDOW_HEIGHT,SCREEN_WIDTH,SCREEN_HEIGHT
 
+
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
