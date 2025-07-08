@@ -15,7 +15,7 @@ from tkinter import messagebox
 from warning_msg import WarningPopup
 from popup import Popup
 
-GITHUB_REPO = "maglovskiNenad/tipply"
+GITHUB_REPO = "maglovskiNenad/hopplo"
 LOCALE_VERSION_FILE = "../version.txt"
 
 def get_local_version():
