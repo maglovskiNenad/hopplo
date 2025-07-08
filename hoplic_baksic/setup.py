@@ -22,7 +22,15 @@ setup(
     author="Maglovski Nenad",
     author_email="maglovskin@gmail.com",
     packages=setuptools.find_packages(),
-    long_description="",
+    long_description="Tipply is a smart tool that simplifies tip distribution among employees based on CSV data. "
+                     "Designed for managers, business owners, and team leads in the service industry, Tipply "
+                     "automatically calculates how much tip each employee should receive — fairly, transparently,and"
+                     " in just a few clicks.Simply upload a CSV file with employee work hours, roles, or earnings, and "
+                     "Tipply takes care of the rest. The app uses customizable logic to divide tips proportionally, "
+                     "ensuring everyone gets what they deserve. Say goodbye to manual spreadsheets, confusing "
+                     "math, and disputes over fairness.Whether you're managing a restaurant, bar, hotel, or "
+                     "any team that pools tips, Tipply helps you streamline payouts and keep things clear "
+                     "and equitable.Tipply — because fair tip distribution shouldn’t be a guessing game.",
     long_description_content_type="text/markdown",
     app = APP,
     options={"py2app" : OPTIONS},
