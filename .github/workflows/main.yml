@@ -57,8 +57,8 @@ jobs:
         id: release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v${{ github.run_number }}
-          name: Release v${{ github.run_number }}
+          tag_name: v${{ github.ref_name }}
+          name: v${{ github.run_number }}
           body: Automated release from GitHub Actions workflow.
           draft: false
           prerelease: false
