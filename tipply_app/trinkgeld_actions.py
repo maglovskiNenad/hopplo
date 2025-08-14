@@ -96,9 +96,13 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
 
             try:
                  data = self.extract_confirmed_work_hours(df)
+
                  new_list_perso = self.clean_list_data(data)
+
                  hourly_tips = self.get_hourly_tip(new_list_perso, daily_amount)
+
                  calculation = self.calculation_merging_two_lists(new_list_perso, hourly_tips)
+
 
                  self.textbox.pack(fill="both", expand=True, padx=15, pady=15)
 
@@ -217,7 +221,6 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
 
             def clean_colums(col):
                 col = re.sub(r'\ufeff', '', col)
-
                 return col
 
         daily_tip_amount.columns =  [clean_colums(c) for c in daily_tip_amount.columns]
@@ -234,13 +237,14 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
             tips = tips.fillna(0)
 
             all_together = sume.index.intersection(tips.index)
-            
+
             sume = sume.loc[all_together].astype(float)
             tips = tips.loc[all_together].astype(float)
-        
+            print(sume,tips)
             score = tips/sume
 
             return score
+
 
     def calculation_merging_two_lists(self,list_of_worked_hours_and_workers,hourly_tips_on_day):
         if "SUM" in list_of_worked_hours_and_workers.index:
