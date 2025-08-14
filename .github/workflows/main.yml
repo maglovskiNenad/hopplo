@@ -1,4 +1,4 @@
-name: Build and Release macOS App
+name: Build and Release macOS App (PyInstaller)
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
       - 'v*'
 
 permissions:
-  contents: write 
+  contents: write
 
 jobs:
   build-and-release:
@@ -25,25 +25,30 @@ jobs:
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip
-          pip install py2app
+          pip install pyinstaller
           pip install -r requirements.txt
           brew install create-dmg
 
       - name: Clean previous builds
-        run: rm -rf tipply_app/build tipply_app/dist
+        run: rm -rf build dist TipplyApp.dmg
 
-      - name: Build .app with py2app
-        run: python setup.py py2app 
-        working-directory: tipply_app
-
-      - name: Create .dmg file
+      - name: Build .app with PyInstaller
         run: |
-          rm -f tipply.dmg
+          pyinstaller \
+            --windowed \
+            --name "TipplyApp" \
+            --icon=icon.icns \
+            main.py
+        # prilagodi main.py i icon.icns putanjama u tvom projektu
+
+      - name: Create .dmg from .app
+        run: |
           create-dmg \
             --volname "Tipply Installer" \
+            --window-size 800 400 \
             --app-drop-link 600 185 \
-            "tipply.dmg" \
-            "tipply_app/dist/"
+            TipplyApp.dmg \
+            "dist/TipplyApp.app"
 
       - name: Configure Git for tagging
         run: |
@@ -58,11 +63,11 @@ jobs:
       - name: Create GitHub Release and upload DMG
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ github.ref_name }}  # ili v1.0.0 ako je workflow na tag push
+          tag_name: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
-          body: Automated release from GitHub Actions workflow.
+          body: Automated release from GitHub Actions workflow using PyInstaller.
           draft: false
           prerelease: false
-          files: tipply.dmg  
+          files: TipplyApp.dmg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
