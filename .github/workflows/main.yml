@@ -28,8 +28,12 @@ jobs:
       run: python setup.py sdist bdist_wheel
       working-directory: tipply_app
 
+    - name: Install Node create-dmg
+      run: npm install -g create-dmg
+
     - name: Create .dmg file
       run: |
+        rm -f tipply.dmg
         create-dmg \
           --overwrite \
           --dmg-title="Tipply Installer" \
