@@ -11,10 +11,6 @@ from setuptools import setup
 APP = ["main.py"]
 OPTIONS = {
     'argv_emulation': True,
-    'packages': [   
-        'requests',
-        'json',
-    ],
     'iconfile' : 'images/MyIcon.ico',
     'plist': {
         'CFBundleName': 'Tipply',
