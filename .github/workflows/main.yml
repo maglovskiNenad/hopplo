@@ -2,13 +2,12 @@ name: Build and Release macOS App
 
 on:
   push:
-    branches: [ main ]
     tags:
-      - 'v*'
-  workflow_dispatch:
+      - 'v*'        
+  workflow_dispatch:  
 
 permissions:
-  contents: write  # važno za release
+  contents: write  
 
 jobs:
   build-and-release:
@@ -34,7 +33,7 @@ jobs:
         run: rm -rf tipply_app/build tipply_app/dist
 
       - name: Build .app with py2app
-        run: python setup.py py2app || true
+        run: python setup.py py2app
         working-directory: tipply_app
 
       - name: Create .dmg file
@@ -46,25 +45,12 @@ jobs:
             "tipply.dmg" \
             "tipply_app/dist/"
 
-      - name: Configure Git for tagging
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Create and push tag
-        run: |
-          git tag v${{ github.run_number }}
-          git push origin v${{ github.run_number }}
-
-      - name: Create GitHub Release and upload DMG
+      - name: Upload DMG to GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ github.ref_name }}  # ili v1.0.0 ako je workflow na tag push
+          tag_name: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
-          body: Automated release from GitHub Actions workflow.
-          draft: false
-          prerelease: false
-          files: tipply.dmg   # <- uploaduje fajl odmah
+          body: "Automated release from GitHub Actions workflow."
+          files: tipply.dmg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
