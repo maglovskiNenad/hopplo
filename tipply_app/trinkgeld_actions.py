@@ -240,7 +240,7 @@ class TrinkgeldActions(ctk.CTkFrame,TkinterDnD.DnDWrapper):
 
             sume = sume.loc[all_together].astype(float)
             tips = tips.loc[all_together].astype(float)
-            print(sume,tips)
+           
             score = tips/sume
 
             return score
