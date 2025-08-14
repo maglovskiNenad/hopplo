@@ -29,6 +29,10 @@ jobs:
           pip install py2app
           brew install create-dmg
 
+      - name: Clean previous builds
+        run: |
+          rm -rf tipply_app/build tipply_app/dist
+
       - name: Build .app with py2app
         run: python setup.py py2app
         working-directory: tipply_app
