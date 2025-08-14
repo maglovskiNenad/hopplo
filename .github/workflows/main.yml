@@ -32,11 +32,11 @@ jobs:
       run: |
         rm -f tipply.dmg
         create-dmg \
-        --dmg-title "Tipply Installer" \
-        --app-drop-link 600 185 \
-        dist/tipply.app \
-        tipply.dmg
-
+          --volname "Tipply Installer" \
+          --app-drop-link 600 185 \
+          "tipply.dmg" \
+          "dist/"
+          
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
