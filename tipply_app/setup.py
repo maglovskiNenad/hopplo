@@ -12,7 +12,7 @@ APP = ["main.py"]
 OPTIONS = {
     'argv_emulation': True,
     'packages': ['requests', 'json', 'jaraco.text','other_needed_packages'],
-    'iconfile' : 'images/MyIcon.ico'
+    'iconfile' : 'images/MyIcon.ico',
     'plist': {
         'CFBundleName': 'Tipply',
         'CFBundleDisplayName': 'Tipply',
