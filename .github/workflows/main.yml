@@ -1,0 +1,68 @@
+name: Build and Release macOS App
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-macos:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.12
+
+    - name: Install dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        pip install py2app
+        brew install create-dmg
+
+    - name: Build .app
+      run: |
+        python3 setup.py py2app
+
+    - name: Create .dmg file
+      run: |
+        create-dmg \
+          --overwrite \
+          --dmg-title="Tipply Installer" \
+          --app-drop-link \
+          dist/tipply.app \
+          tipply.dmg
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: MacOS-App-and-DMG
+        path: |
+          dist/tipply.app
+          tipply.dmg
+
+    - name: Create GitHub Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v${{ github.run_number }}
+        release_name: Tipply v${{ github.run_number }}
+        body: Automated release from GitHub Actions workflow.
+        draft: false
+        prerelease: false
+
+    - name: Upload DMG to Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./tipply.dmg
+        asset_name: Tipply_Installer.dmg
+        asset_content_type: application/x-apple-diskimage
