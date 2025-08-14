@@ -12,6 +12,8 @@ OPTIONS = {
     'argv_emulation': True,
     'iconfile': 'images/MyIcon.ico',
     'includes': ['jaraco.text', 'jaraco.classes', 'jaraco.collections', 'rubicon.objc'],
+    'packages': ['jaraco.text', 'jaraco.classes', 'jaraco.collections', 'rubicon.objc'],
+    'skip_archive': True,
     'plist': {
         'CFBundleName': 'Tipply',
         'CFBundleDisplayName': 'Tipply',
