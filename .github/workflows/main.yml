@@ -37,7 +37,7 @@ jobs:
           pyinstaller \
             --windowed \
             --name "TipplyApp" \
-            --icon=icon.icns \
+            --icon=tipply_app/images/MyIcon.ico \
             tipply_app/main.py
         # prilagodi main.py i icon.icns putanjama u tvom projektu
 
