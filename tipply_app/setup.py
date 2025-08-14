@@ -10,7 +10,6 @@ APP = ["main.py"]
 
 OPTIONS = {
     'argv_emulation': True,
-    'packages': ['jaraco'],
     'iconfile': 'images/MyIcon.ico',
     'includes': ['jaraco.text', 'jaraco.classes', 'jaraco.collections'],
     'plist': {
