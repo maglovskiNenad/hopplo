@@ -6,10 +6,10 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write 
+  contents: write  # važno za release
 
 jobs:
-  build-macos:
+  build-and-release:
     runs-on: macos-latest
 
     steps:
@@ -39,6 +39,16 @@ jobs:
             --app-drop-link 600 185 \
             "tipply.dmg" \
             "tipply_app/dist/"
+
+      - name: Configure Git for tagging
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Create and push tag
+        run: |
+          git tag v${{ github.run_number }}
+          git push origin v${{ github.run_number }}
 
       - name: Create GitHub Release
         id: release
