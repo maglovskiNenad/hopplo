@@ -10,7 +10,16 @@ from setuptools import setup
 
 APP = ["main.py"]
 OPTIONS = {
-    "iconfile" : "images/MyIcon.ico"
+    'argv_emulation': True,
+    'packages': ['requests', 'json', 'jaraco.text','other_needed_packages'],
+    'iconfile' : 'images/MyIcon.ico'
+    'plist': {
+        'CFBundleName': 'Tipply',
+        'CFBundleDisplayName': 'Tipply',
+        'CFBundleIdentifier': 'com.yourname.tipply',
+        'CFBundleVersion': '0.1.0',
+        'CFBundleShortVersionString': '0.1.0',
+        'LSUIElement': False,
 }
 
 setup(
