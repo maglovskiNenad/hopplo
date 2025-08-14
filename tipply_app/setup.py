@@ -13,9 +13,7 @@ OPTIONS = {
     'argv_emulation': True,
     'packages': [   
         'requests',
-        'jaraco.text',
-        'jaraco.collections',
-        'jaraco.classes'
+        'json',
     ],
     'iconfile' : 'images/MyIcon.ico',
     'plist': {
