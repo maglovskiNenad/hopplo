@@ -11,7 +11,7 @@ from setuptools import setup
 APP = ["main.py"]
 OPTIONS = {
     'argv_emulation': True,
-    'packages': ['requests', 'json', 'jaraco.text','other_needed_packages'],
+    'packages': ['requests', 'json', 'jaraco.text'],
     'iconfile' : 'images/MyIcon.ico',
     'plist': {
         'CFBundleName': 'Tipply',
