@@ -1,4 +1,4 @@
-name: Build and Release macOS App (PyInstaller)
+name: Build and Release macOS App
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
       - 'v*'
 
 permissions:
-  contents: write
+  contents: write 
 
 jobs:
   build-and-release:
@@ -25,30 +25,26 @@ jobs:
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip
-          pip install pyinstaller
-          pip install -r requirements.txt
+          python3 -m pip install py2app
+          python3 -m pip install -r requirements.txt
           brew install create-dmg
-
       - name: Clean previous builds
-        run: rm -rf build dist TipplyApp.dmg
+        run: rm -rf tipply_app/build tipply_app/dist
 
-      - name: Build .app with PyInstaller
-        run: |
-          pyinstaller \
-            --windowed \
-            --name "TipplyApp" \
-            --icon=tipply_app/images/MyIcon.ico \
-            tipply_app/main.py
-        # prilagodi main.py i icon.icns putanjama u tvom projektu
+      - name: Build .app with py2app
+        run: 
+          rm -rf build dist
+          python setup.py py2app 
+        working-directory: tipply_app
 
-      - name: Create .dmg from .app
+      - name: Create .dmg file
         run: |
+          rm -f tipply.dmg
           create-dmg \
             --volname "Tipply Installer" \
-            --window-size 800 400 \
             --app-drop-link 600 185 \
-            TipplyApp.dmg \
-            "dist/TipplyApp.app"
+            "tipply.dmg" \
+            "tipply_app/dist/"
 
       - name: Configure Git for tagging
         run: |
@@ -63,11 +59,11 @@ jobs:
       - name: Create GitHub Release and upload DMG
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}  
           name: Release ${{ github.ref_name }}
-          body: Automated release from GitHub Actions workflow using PyInstaller.
+          body: Automated release from GitHub Actions workflow.
           draft: false
           prerelease: false
-          files: TipplyApp.dmg
+          files: tipply.dmg  
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
