@@ -2,10 +2,8 @@ name: Build and Release macOS App
 
 on:
   push:
-    branches: [ main ]
     tags:
-      - 'v*'
-  workflow_dispatch:
+      - 'v*'   # workflow se pokreće samo na tag push
 
 permissions:
   contents: write  # važno za release
@@ -42,35 +40,14 @@ jobs:
             "tipply.dmg" \
             "tipply_app/dist/"
 
-      - name: Configure Git for tagging
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Create and push tag
-        run: |
-          git tag v${{ github.run_number }}
-          git push origin v${{ github.run_number }}
-          sleep 5
-
-      - name: Create GitHub Release
-        id: release
+      - name: Create GitHub Release and upload DMG
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v${{ github.ref_name }}
-          name: v${{ github.run_number }}
+          tag_name: ${{ github.ref_name }}       # koristi tag koji je push-ovan
+          name: Release ${{ github.ref_name }}
           body: Automated release from GitHub Actions workflow.
           draft: false
           prerelease: false
+          files: tipply.dmg                      # fajl koji se uploaduje
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload DMG to Release 
-        uses: actions/upload-release-asset@v1 
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-        with: 
-          upload_url: ${{ steps.create_release.outputs.upload_url }} 
-          asset_path: ./tipply.dmg 
-          asset_name: Tipply_Installer.dmg 
-          asset_content_type: application/x-apple-diskimage
