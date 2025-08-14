@@ -38,7 +38,7 @@ jobs:
             --windowed \
             --name "TipplyApp" \
             --icon=icon.icns \
-            main.py
+            tipply_app/main.py
         # prilagodi main.py i icon.icns putanjama u tvom projektu
 
       - name: Create .dmg from .app
