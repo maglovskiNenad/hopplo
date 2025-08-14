@@ -27,7 +27,7 @@ jobs:
         run: |
           python3 -m pip install --upgrade pip
           pip install py2app
-          pip install -r hopplo/requirements.txt
+          pip install -r requirements.txt
           brew install create-dmg
 
       - name: Clean previous builds
