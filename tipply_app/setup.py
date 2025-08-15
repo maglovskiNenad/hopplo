@@ -11,7 +11,6 @@ APP = ["main.py"]
 OPTIONS = {
     'argv_emulation': True,
     'iconfile': 'images/MyIcon.ico',
-    'includes': ['jaraco.text', 'jaraco.classes', 'jaraco.collections'],
     'plist': {
         'CFBundleName': 'Tipply',
         'CFBundleDisplayName': 'Tipply',
