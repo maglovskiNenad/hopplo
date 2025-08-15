@@ -11,6 +11,7 @@ APP = ["main.py"]
 OPTIONS = {
     'argv_emulation': True,
     'iconfile': 'images/MyIcon.ico',
+    'excludes': ['rubicon', 'rubicon.objc'],
     'plist': {
         'CFBundleName': 'Tipply',
         'CFBundleDisplayName': 'Tipply',
