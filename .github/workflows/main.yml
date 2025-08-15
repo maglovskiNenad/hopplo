@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write  # važno za release
+  contents: write
 
 jobs:
   build-and-release:
@@ -35,9 +35,7 @@ jobs:
           rm -rf tipply_app/build tipply_app/dist
 
       - name: Build .app with py2app
-        run: 
-          rm -r build dist
-          python setup.py py2app
+        run: python setup.py py2app
         working-directory: tipply_app
 
       - name: Create .dmg file
