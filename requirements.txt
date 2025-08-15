@@ -1,4 +1,4 @@
-﻿altgraph==0.17.4
+altgraph==0.17.4
 attrs==24.2.0
 autocommand==2.2.2
 certifi==2025.8.3
@@ -48,9 +48,3 @@ tzdata==2025.2
 urllib3==2.5.0
 wheel==0.45.1
 zope.interface==7.2
-py2app
-rubicon-objc
-jaraco.classes
-jaraco.collections
-jaraco.text
-
