@@ -5,9 +5,10 @@ on:
     branches: [ main ]
     tags:
       - 'v*'
+  workflow_dispatch:
 
 permissions:
-  contents: write 
+  contents: write  # važno za release
 
 jobs:
   build-and-release:
@@ -25,16 +26,16 @@ jobs:
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip
-          python3 -m pip install py2app
-          python3 -m pip install -r requirements.txt
+          pip install py2app
+          pip install -r requirements.txt
           brew install create-dmg
+
       - name: Clean previous builds
-        run: rm -rf tipply_app/build tipply_app/dist
+        run: |
+          rm -rf tipply_app/build tipply_app/dist
 
       - name: Build .app with py2app
-        run: 
-          rm -rf build dist
-          python setup.py py2app 
+        run: python setup.py py2app
         working-directory: tipply_app
 
       - name: Create .dmg file
@@ -64,6 +65,6 @@ jobs:
           body: Automated release from GitHub Actions workflow.
           draft: false
           prerelease: false
-          files: tipply.dmg  
+          files: tipply.dmg   #
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
