@@ -18,8 +18,8 @@ OPTIONS = {
     'packages': ['tkinter', 'customtkinter', 'cmath'], 
     'includes': ['tkinter', 'customtkinter'],
     'frameworks': [
-        os.path.join(brew_prefix, 'lib', 'libtcl8.6.dylib'),
-        os.path.join(brew_prefix, 'lib', 'libtk8.6.dylib'),
+        os.path.join(brew_prefix, 'Frameworks', 'Tcl.framework'),
+        os.path.join(brew_prefix, 'Frameworks', 'Tk.framework'),
     ],
     'plist': {
         'CFBundleName': 'Tipply',
