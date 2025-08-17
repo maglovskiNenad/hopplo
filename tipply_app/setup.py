@@ -14,7 +14,10 @@ OPTIONS = {
     'excludes': ['rubicon', 'rubicon.objc'],
     'packages': ['tkinter', 'customtkinter', 'cmath'], 
     'includes': ['tkinter', 'customtkinter'],
-    'frameworks': ['/usr/local/opt/tcl-tk/lib'],
+    'frameworks': [
+        '/usr/local/opt/tcl-tk/lib/libtcl8.6.dylib',
+        '/usr/local/opt/tcl-tk/lib/libtk8.6.dylib',
+    ],
     'plist': {
         'CFBundleName': 'Tipply',
         'CFBundleDisplayName': 'Tipply',
