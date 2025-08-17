@@ -5,6 +5,9 @@
 # ===============================================================
 
 from setuptools import setup
+import os 
+
+brew_prefix = os.popen('brew --prefix tcl-tk').read().strip()
 
 APP = ["main.py"]
 
