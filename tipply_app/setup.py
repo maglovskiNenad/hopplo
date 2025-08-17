@@ -12,7 +12,9 @@ OPTIONS = {
     'argv_emulation': True,
     'iconfile': 'images/MyIcon.ico',
     'excludes': ['rubicon', 'rubicon.objc'],
-    'packages': ['cmath'],
+    'packages': ['tkinter', 'customtkinter', 'cmath'], 
+    'includes': ['tkinter', 'customtkinter'],
+    'frameworks': ['/usr/local/opt/tcl-tk/lib'],
     'plist': {
         'CFBundleName': 'Tipply',
         'CFBundleDisplayName': 'Tipply',
