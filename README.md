@@ -13,13 +13,14 @@ formatted table inside the app.
 This Python application automatically reads and processes exported CSV files containing employees’ working hours to fairly distribute tips based on actual hours worked.
 
 Key features include:
-	•	Detects and handles different file encodings using the Chardet library.
-	•	Intuitive drag-and-drop interface for file uploads.
-	•	Extracts only confirmed work hours (‘Bestätigte Arbeitszeit’) for accurate calculations.
-	•	Loads daily tip amounts from a separate tab-separated file.
-	•	Matches each employee’s working hours with the corresponding daily tip amount.
-	•	Calculates fair tip distribution proportionally based on hours worked.
-	•	Presents the final results in a clean, formatted table within the app.
+
+•	Detects and handles different file encodings using the Chardet library.
+•	Intuitive drag-and-drop interface for file uploads.
+•	Extracts only confirmed work hours (‘Bestätigte Arbeitszeit’) for accurate calculations.
+•	Loads daily tip amounts from a separate tab-separated file.
+•	Matches each employee’s working hours with the corresponding daily tip amount.
+•	Calculates fair tip distribution proportionally based on hours worked.
+•	Presents the final results in a clean, formatted table within the app.
 
 This project enables quick and precise tip calculations for teams, eliminating manual errors and saving time.
 
