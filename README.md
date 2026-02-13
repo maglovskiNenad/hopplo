@@ -57,13 +57,13 @@ Installation
 							
 		python main.py
 
-	2.	Upload the CSV file containing employees’ working hours using drag-and-drop or file browsing.
-	3.	Upload the tab-separated file with daily tip amounts.
-	4.	The app will automatically:
+2.	Upload the CSV file containing employees’ working hours using drag-and-drop or file browsing.
+3.	Upload the tab-separated file with daily tip amounts.
+4.	The app will automatically:
 	•	Clean and format the data
 	•	Match working hours with daily tips
 	•	Calculate proportional tip distribution
-	5.	Results are displayed in a clear table, ready to export or print.
+5.	Results are displayed in a clear table, ready to export or print.
  
 ## Project Structure
 
