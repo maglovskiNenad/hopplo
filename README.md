@@ -60,13 +60,13 @@ Installation
  
 ## Project Structure
 
-hopplo/
-│
-├─ main.py                  # Main application file
-├─ utils.py                 # Data cleaning and processing functions
-├─ tip_data.tsv             # Sample daily tips (tab-separated)
-├─ requirements.txt         # Python dependencies
-├─ README.md                # Documentation
-└─ assets/                  # Icons and UI files (if any)
+	tipply_app/
+	│
+	├─ app                  # Main application file
+	├─ utils.py             # Data cleaning and processing functions
+	├─ tip_data.tsv         # Sample daily tips (tab-separated)
+	├─ requirements.txt     # Python dependencies
+	├─ README.md            # Documentation
+	└─ assets/              # Icons and UI files (if any)
 
 
