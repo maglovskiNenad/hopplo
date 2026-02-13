@@ -31,8 +31,8 @@ Installation
 
 2. Clone the repository
 
-	     git clone https://github.com/maglovskiNenad/hooplo.git
-	      cd hopplo
+	     git clone https://github.com/username/tipply_app.git
+	     cd hopplo
 
 3. Create a virtual environment (recommended)
 									
@@ -79,3 +79,25 @@ Installation
 	├─ LICENSE                  # MIT License file
 	├─ README.md                # Project documentation
 	└─ requirements.txt         # Python dependencies
+
+
+## License
+
+This project is licensed under the MIT License – feel free to use, modify, and distribute.
+
+## Contributing
+
+We welcome contributions! To contribute:
+	1.	Fork the repository
+	2.	Create a new branch for your feature:
+
+	git checkout -b feature/new-feature
+
+3.	Make your changes and test thoroughly
+4.	Submit a Pull Request with a clear description
+
+Contribution guidelines:
+	•	Use black or flake8 for code formatting
+	•	Add tests for new functionality
+	•	Write clear, readable code with comments where necessary
+
