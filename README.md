@@ -1,4 +1,4 @@
-# 
+# TIPPLY 
 
 Automatically read and clean exported CSV files with employees’ working hours. 
 The app detects and handles different file encodings using the Chardet library, 
