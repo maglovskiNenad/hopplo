@@ -108,7 +108,10 @@ We welcome contributions! To contribute:
 4.	Submit a Pull Request with a clear description
 
 Contribution guidelines:
-	•	Use black or flake8 for code formatting
-	•	Add tests for new functionality
-	•	Write clear, readable code with comments where necessary
+
+•	Use black or flake8 for code formatting
+
+•	Add tests for new functionality
+
+•	Write clear, readable code with comments where necessary
 
