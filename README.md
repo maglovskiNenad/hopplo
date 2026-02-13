@@ -63,10 +63,20 @@ Installation
 	tipply_app/
 	│
 	├─ app                  # Main application file
-	├─ utils.py             # Data cleaning and processing functions
-	├─ tip_data.tsv         # Sample daily tips (tab-separated)
-	├─ requirements.txt     # Python dependencies
+			├─ images
+			├─ config.py
+			├─ home_page.py
+			├─ main.py
+			├─ popup.py
+			├─ settings.py
+			├─ tests.py
+			├─ trinkgeld_actions.py
+			├─ update.py
+			├─ version.txt
+			└─warning_msg.py
+	├─ .gitignore           # Data cleaning and processing functions
+	├─ LICENSE              # Sample daily tips (tab-separated)
 	├─ README.md            # Documentation
-	└─ assets/              # Icons and UI files (if any)
+	└─ requirements.txt     # Python dependencies
 
 
