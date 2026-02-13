@@ -99,10 +99,10 @@ This project is licensed under the MIT License – feel free to use, modify, and
 ## Contributing
 
 We welcome contributions! To contribute:
-	1.	Fork the repository
-	2.	Create a new branch for your feature:
+1.	Fork the repository
+2.	Create a new branch for your feature:
 
-	git checkout -b feature/new-feature
+		git checkout -b feature/new-feature
 
 3.	Make your changes and test thoroughly
 4.	Submit a Pull Request with a clear description
