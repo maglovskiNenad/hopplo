@@ -31,24 +31,24 @@ Installation
 
 2. Clone the repository
 
-        git clone https://github.com/maglovskiNenad/hooplo.git
-        cd hopplo
+	     git clone https://github.com/maglovskiNenad/hooplo.git
+	      cd hopplo
 
 3. Create a virtual environment (recommended)
 									
-							python -m venv venv
-							source venv/bin/activate   # Linux/macOS
-							venv\Scripts\activate      # Windows
+		python -m venv venv
+		source venv/bin/activate   # Linux/macOS
+		venv\Scripts\activate      # Windows
 
 4. Install dependencies
 
-							pip install -r requirements.txt
+		pip install -r requirements.txt
 
 ## Usage
 
 1.	Run the application:
 							
-							python main.py
+		python main.py
 
 	2.	Upload the CSV file containing employees’ working hours using drag-and-drop or file browsing.
 	3.	Upload the tab-separated file with daily tip amounts.
