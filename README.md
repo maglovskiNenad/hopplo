@@ -62,21 +62,20 @@ Installation
 
 	tipply_app/
 	│
-	├─ app                  # Main application file
-			├─ images
-			├─ config.py
-			├─ home_page.py
-			├─ main.py
-			├─ popup.py
-			├─ settings.py
-			├─ tests.py
-			├─ trinkgeld_actions.py
-			├─ update.py
-			├─ version.txt
-			└─warning_msg.py
-	├─ .gitignore           # Data cleaning and processing functions
-	├─ LICENSE              # Sample daily tips (tab-separated)
-	├─ README.md            # Documentation
-	└─ requirements.txt     # Python dependencies
-
-
+	├─ app/                     # Main application package
+	│   ├─ images/              # Image assets used in the app
+	│   ├─ config.py            # Configuration settings
+	│   ├─ home_page.py         # Home page UI logic
+	│   ├─ main.py              # Entry point of the application
+	│   ├─ popup.py             # Popup dialogs and messages
+	│   ├─ settings.py          # Settings page logic
+	│   ├─ tests.py             # Unit tests for the app
+	│   ├─ trinkgeld_actions.py # Tip calculation and data processing logic
+	│   ├─ update.py            # Update checking logic
+	│   ├─ version.txt          # Current app version
+	│   └─ warning_msg.py       # Warning and error messages
+	│
+	├─ .gitignore               # Git ignore rules
+	├─ LICENSE                  # MIT License file
+	├─ README.md                # Project documentation
+	└─ requirements.txt         # Python dependencies
