@@ -3,7 +3,7 @@
 from pathlib import Path
 
 
-project_root = Path(__file__).resolve().parent
+project_root = Path(SPECPATH).resolve()
 app_dir = project_root / "tipply_app"
 icon_path = app_dir / "images" / "MyIcon.ico"
 
