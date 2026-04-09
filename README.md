@@ -51,6 +51,25 @@ Installation
 
 		pip install -r requirements.txt
 
+## Release build
+
+Prebuilt desktop packages can be attached to GitHub Releases.
+
+Local release build:
+
+```bash
+pip install -r requirements-build.txt
+pyinstaller --clean hopplo.spec
+```
+
+The packaged app will be created in `dist/hopplo/`.
+
+Automated GitHub Release build:
+
+1. Push a tag like `v1.0.1`
+2. GitHub Actions workflow `Build Release` builds packages for Linux, Windows, and macOS
+3. The generated archives are uploaded to the matching GitHub Release automatically
+
 ## Usage
 
 1.	Run the application:
@@ -114,4 +133,3 @@ Contribution guidelines:
 •	Add tests for new functionality
 
 •	Write clear, readable code with comments where necessary
-

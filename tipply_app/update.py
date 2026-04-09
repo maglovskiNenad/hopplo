@@ -4,66 +4,82 @@
 # This source code is licensed under the MIT
 # license found in the LICENSE file.
 # ===============================================================
-from pyexpat.errors import messages
-from requests import get, status_codes
-import subprocess
-import os
-import sys
-import tempfile
-import customtkinter as ctk
+import platform
+import webbrowser
+from requests import get
 from tkinter import messagebox
-from warning_msg import WarningPopup
-from popup import Popup
+from paths import resource_path
 
 GITHUB_REPO = "maglovskiNenad/hopplo"
-LOCALE_VERSION_FILE = "../version.txt"
 
 def get_local_version():
-    with open(LOCALE_VERSION_FILE, "r")as f:
+    with open(resource_path("version.txt"), "r", encoding="utf-8") as f:
         return  f.read().strip()
 
-def get_last_version():
-    url = f"https://api.github.com/repos/{GITHUB_REPO}/releases/late"
+def get_latest_release():
+    url = f"https://api.github.com/repos/{GITHUB_REPO}/releases/latest"
     response = get(url)
-    if status_codes != 200:
+    if response.status_code != 200:
         raise  Exception("No update available!")
-    data = response.json()
-    return data["tag_name"].lstrip("v"),data["assets"][0]["browser_download_url"]
+    return response.json()
 
-def download_dmg(url):
-    print(f"Downloading:{url}")
-    r = get(url, stream=True)
-    if r.status_code != 200:
-        raise Exception("Download failed")
-    temp_dmg = os.path.join(tempfile.gettempdir(), "update.dmg")
-    with open(temp_dmg, "wb") as f:
-        for chunk in r.iter_content(1024*1024):
-            f.write(chunk)
-    return temp_dmg
+def get_download_url(release_data):
+    assets = release_data.get("assets", [])
+    if not assets:
+        return release_data["html_url"]
 
-def mount_and_install(dmg_path):
-    subprocess.run(["hdiutil", "attach", dmg_path])
-    messagebox.showinfo("Update", "The new version is mounted. Open a window and drag the application to /Applications.")
+    system_name = platform.system().lower()
+    machine = platform.machine().lower()
+
+    preferred_markers = {
+        "windows": ["windows", "win"],
+        "darwin": ["macos", "mac", "osx"],
+        "linux": ["linux"],
+    }
+    arch_markers = {
+        "arm64": ["arm64", "aarch64"],
+        "aarch64": ["arm64", "aarch64"],
+        "x86_64": ["x64", "x86_64", "amd64"],
+        "amd64": ["x64", "x86_64", "amd64"],
+    }
+
+    system_markers = preferred_markers.get(system_name, [system_name])
+    machine_markers = arch_markers.get(machine, [machine])
+
+    for asset in assets:
+        name = asset["name"].lower()
+        if any(marker in name for marker in system_markers) and any(marker in name for marker in machine_markers):
+            return asset["browser_download_url"]
+
+    for asset in assets:
+        name = asset["name"].lower()
+        if any(marker in name for marker in system_markers):
+            return asset["browser_download_url"]
+
+    return assets[0]["browser_download_url"]
 
 def get_update():
-    local_version = get_last_version()
+    local_version = get_local_version()
     try:
-        latest_version,dmg_url = get_last_version()
+        release_data = get_latest_release()
     except Exception as e:
         messagebox.showerror("Error",str(e))
         return
 
+    latest_version = release_data["tag_name"].lstrip("v")
+    download_url = get_download_url(release_data)
+
     if local_version == latest_version:
         messagebox.showinfo("Update", f"App is already up to date ({local_version})")
+        return
 
     answer = messagebox.askyesno(
         "Update available",
-        f"A new version of {latest_version} is available.\nCurrent: {local_version}\n\nDo you want to download it?"
+        f"A new version of {latest_version} is available.\nCurrent: {local_version}\n\nDo you want to open the download page?"
     )
 
     if answer:
         try:
-            dmg_path = download_dmg(dmg_url)
-            mount_and_install(dmg_path)
+            webbrowser.open(download_url)
         except Exception as e:
             messagebox.showerror("Update error", str(e))

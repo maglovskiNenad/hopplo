@@ -11,6 +11,7 @@ from popup import Popup
 from warning_msg import WarningPopup
 from config import WINDOW_WIDTH,WINDOW_HEIGHT,title_font,text_font
 import update
+from paths import project_path
 
 class SettingsActions(ctk.CTkFrame):
     def __init__(self,parent):
@@ -63,10 +64,11 @@ class SettingsActions(ctk.CTkFrame):
 
     def read_license(self):
         try:
-            with open("../LICENSE","r",encoding="utf-8")as file:
+            with open(project_path("LICENSE"),"r",encoding="utf-8")as file:
                 text_license = file.read()
         except FileNotFoundError:
             WarningPopup(self,message="Not an existing file")
+            return
 
         Popup(self,message=text_license)
 
